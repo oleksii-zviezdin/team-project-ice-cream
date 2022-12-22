@@ -1,0 +1,71 @@
+// === Кнопки. Звертаємо увагу на свої розміри ===
+@mixin Button {
+  font-size: 12px;
+  line-height: calc(15 / 12);
+
+  @media screen and (min-width: 480px) {
+    font-size: 14px;
+    line-height: calc(18 / 14);
+  }
+}
+
+// === Кнопка з бордером. Увага на свої розміри ===
+@mixin Button-border {
+  font-size: 12px;
+  line-height: calc(15 / 12);
+
+  @media screen and (min-width: 480px) {
+    font-size: 14px;
+    line-height: calc(18 / 14);
+  }
+}
+
+// === Заголовки ===
+@mixin Title {
+  font-family: var(--secondary-font);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+// === Підзаголовки. Що треба - перевизначаємо ===
+@mixin SubTitle-modal {
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  line-height: calc (24 / 16);
+  align-items: center;
+  text-align: center;
+  color: var(--main-text-cl);
+
+  @media screen and (min-width: 480px) {
+    font-size: 20px;
+    line-height: calc (28 / 20);
+  }
+}
+
+// Тексти.
+@mixin Text {
+  font-family: var(--main-font);
+  font-size: 14px;
+  letter-spacing: 0.04em;
+
+  @media screen and (min-width: 480px) {
+    font-size: 16px;
+  }
+}
+
+// === Міксин, який змінює позиціонування вікна модалки, коли його висота менше вьюпорту, щоб вікно не "вилазило" зверху за межі в'юпорту, а прокручувалося: ===
+// Вказуємо фактичну висоту модалки в мобільній і десктопній версії
+
+@mixin modal($height-mob, $height-desk) {
+  @media screen and (max-height: ($height-mob + 30px)) and (max-width: 767px) {
+    min-height: $height-mob;
+    top: 15px;
+    transform: translate(-50%, 0);
+  }
+
+  @media screen and (max-height: ($height-desk + 30px)) and (min-width: 768px) {
+    min-height: $height-desk;
+    top: 15px;
+    transform: translate(-50%, 0);
+  }
+}
