@@ -1,0 +1,85 @@
+%container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+// === Кнопка з фоном ===
+%button {
+  min-height: 42px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  font-family: inherit;
+  font-weight: 600;
+  background-color: var(--accent-bg-txt-cl);
+  color: var(--main-text-cl);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    background-color: #0a8817;
+  }
+
+  &:focus {
+    color: var(--secondary-text-cl);
+  }
+}
+
+// === Кнопка с бордером без фона ===
+
+%button-border {
+  min-height: 38px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  font-family: inherit;
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  background-color: transparent;
+  border: 2px solid var(--accent-bg-txt-cl);
+  color: var(--main-text-cl);
+  cursor: pointer;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    border: 2px solid #0a8817;
+  }
+
+  &:focus {
+    color: var(--secondary-text-cl);
+  }
+}
+
+// === Форма для модалок ===
+
+%modal-input {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 16px;
+  background-color: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: var(--border-radius);
+  outline: rgba(0, 0, 0, 0);
+}

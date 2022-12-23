@@ -1,0 +1,15 @@
+:root {
+  // === Fonts ===
+  --main-font: 'Montserrat', sans-serif;
+  --secondary-font: 'Seymour One', sans-serif;
+
+  // === Text and bg colors ===
+  --main-text-cl: #131313;
+  --secondary-text-cl: #fcfcfc;
+  --accent-bg-txt-cl: #f8d24e;
+  --main-bg-cl: #84a178;
+
+  //  === Other ===
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --border-radius: 10px;
+}

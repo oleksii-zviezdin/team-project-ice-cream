@@ -1,0 +1,121 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--main-text-cl);
+  font-size: 14px;
+  letter-spacing: 0.04em;
+
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  background-image: url(../images/background-body/background_mobile@1x.jpg);
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(./images/background-body/background_mobile@2x.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+    background-image: url(./images/background-body/background_mobile@3x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(./images/background-body/background_tablet@1x.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(./images/background-body/background_tablet@2x.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: url(./images/background-body/background_tablet@3x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(./images/background-body/background_desktop@1x.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(./images/background-body/background_desktop@2x.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: url(./images/background-body/background_desktop@3x.jpg);
+    }
+  }
+}
+
+// === Клас для JS для вимкнення модального вікна ===
+
+.overlay {
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 20;
+  transition: opacity 250ms var(--timing-function);
+
+  overflow-y: scroll;
+}
+
+// === модалка ===
+
+.modal {
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+
+  width: 280px;
+
+  background-color: var(--secondary-text-cl);
+  border: 2px solid var(--accent-bg-txt-cl);
+  border-radius: var(--border-radius);
+
+  @media screen and (min-width: 768px) {
+    width: 568px;
+  }
+
+  @media screen and (max-width: 310px) {
+    width: calc(100% - 30px);
+  }
+}
+
+// === Клас для JS для виклику і появи модального вікна ===
+
+.active {
+  opacity: 1;
+  visibility: visible;
+}
