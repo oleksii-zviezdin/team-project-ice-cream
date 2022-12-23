@@ -32,14 +32,13 @@
 @mixin SubTitle-modal($f-size, $line-h, $f-size-media, $line-h-media) {
   font-family: var(--secondary-font);
   font-size: $f-size;
-  line-height: calc ($line-h / $f-size);
-  align-items: center;
+  line-height: calc($line-h / $f-size);
   text-align: center;
   color: var(--main-text-cl);
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     font-size: $f-size-media;
-    line-height: calc ($line-h-media / $f-size-media);
+    line-height: calc($line-h-media / $f-size-media);
   }
 }
 
