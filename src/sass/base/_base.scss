@@ -24,44 +24,44 @@ body {
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url(../images/background-body/background_mobile@2x.jpg);
+    background-image: url(./images/background-body/background_mobile@2x.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 3),
     screen and (min-resolution: 288dpi),
     screen and (min-resolution: 3dppx) {
-    background-image: url(../images/background-body/background_mobile@3x.jpg);
+    background-image: url(./images/background-body/background_mobile@3x.jpg);
   }
 
   @media screen and (min-width: 768px) {
-    background-image: url(../images/background-body/background_tablet@1x.jpg);
+    background-image: url(./images/background-body/background_tablet@1x.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url(../images/background-body/background_tablet@2x.jpg);
+      background-image: url(./images/background-body/background_tablet@2x.jpg);
     }
 
     @media screen and (min-device-pixel-ratio: 3),
       screen and (min-resolution: 288dpi),
       screen and (min-resolution: 3dppx) {
-      background-image: url(../images/background-body/background_tablet@3x.jpg);
+      background-image: url(./images/background-body/background_tablet@3x.jpg);
     }
   }
 
   @media screen and (min-width: 1200px) {
-    background-image: url(../images/background-body/background_desktop@1x.jpg);
+    background-image: url(./images/background-body/background_desktop@1x.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url(../images/background-body/background_desktop@2x.jpg);
+      background-image: url(./images/background-body/background_desktop@2x.jpg);
     }
 
     @media screen and (min-device-pixel-ratio: 3),
       screen and (min-resolution: 288dpi),
       screen and (min-resolution: 3dppx) {
-      background-image: url(../images/background-body/background_desktop@3x.jpg);
+      background-image: url(./images/background-body/background_desktop@3x.jpg);
     }
   }
 }
