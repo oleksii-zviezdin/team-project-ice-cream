@@ -1,0 +1,119 @@
+/* Reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.gallery {
+    position: relative;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 32px;
+        top: 0;
+        background: rgba(132, 161, 120, 1);
+
+        @media screen and (min-width: 768px) {
+            height: 144px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            height: 98px;
+        }
+    }
+}
+
+.gallery__container {
+    padding: 0 20px;
+    background-color: transparent;
+
+    @media screen and (min-width: 768px) {
+        padding: 0 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 0 94px;
+    }
+}
+
+.gallery__wrapper {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    min-width: 150px;
+    min-height: 130px;
+    @media screen and (min-width: 480px) {
+            width: 440px;
+            height: 205px;
+            border-radius: 8px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            width: 704px;
+            height: 327px;
+            border-radius: 18px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 1013px;
+            height: 422px;
+            border-radius: 24px;
+        }
+    
+
+    & picture {
+        position: absolute;
+        animation-name: cf4FadeInOut;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 10.5s;
+    }
+
+    & picture:nth-of-type(1) {
+        animation-delay: 7s;
+    }
+
+    & picture:nth-of-type(2) {
+        animation-delay: 3.5s;
+    }
+
+    & picture:nth-of-type(3) {
+        animation-delay: 0;
+    }
+}
+
+@keyframes cf4FadeInOut {
+    0% {
+        opacity: 1;
+    }
+
+    28% {
+        opacity: 1;
+    }
+
+    33% {
+        opacity: 0;
+    }
+
+    94% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
