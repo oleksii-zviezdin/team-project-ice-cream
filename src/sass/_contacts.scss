@@ -263,3 +263,8 @@
 .franshise-button {
   @extend %button-border;
 }
+
+.locations-button__icon,
+.franshise-button__icon {
+  fill: currentColor;
+}
