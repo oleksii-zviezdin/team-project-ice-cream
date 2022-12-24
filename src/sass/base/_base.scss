@@ -18,7 +18,6 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-
   background-image: url(../images/background-body/background_mobile@1x.jpg);
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -66,7 +65,13 @@ body {
   }
 }
 
-// === Клас для JS для вимкнення модального вікна ===
+//  === Стилі img ===
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 .overlay {
   opacity: 0;
@@ -86,8 +91,8 @@ body {
   overflow-y: scroll;
 }
 
-// === модалка ===
 
+// === модалка ===
 .modal {
   opacity: 0;
   visibility: hidden;
@@ -114,7 +119,6 @@ body {
 }
 
 // === Клас для JS для виклику і появи модального вікна ===
-
 .active {
   opacity: 1;
   visibility: visible;
