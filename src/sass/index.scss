@@ -1,6 +1,15 @@
+//add normalized
 @import './common';
+
+//add components
+@import './galary';
+@import './feedback';
+
+//add base styles
 @import './base/base';
 @import './base/reset';
+
+//add utils
 @import './utils/variables';
 @import './utils/placeholder';
 @import './utils/mixins';
