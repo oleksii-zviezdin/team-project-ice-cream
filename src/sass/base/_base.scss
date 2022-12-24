@@ -66,7 +66,13 @@ body {
   }
 }
 
-// === Клас для JS для вимкнення модального вікна ===
+//  === Стилі img ===
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 .overlay {
   opacity: 0;
@@ -86,8 +92,8 @@ body {
   overflow-y: scroll;
 }
 
-// === модалка ===
 
+// === модалка ===
 .modal {
   opacity: 0;
   visibility: hidden;
@@ -114,7 +120,6 @@ body {
 }
 
 // === Клас для JS для виклику і появи модального вікна ===
-
 .active {
   opacity: 1;
   visibility: visible;

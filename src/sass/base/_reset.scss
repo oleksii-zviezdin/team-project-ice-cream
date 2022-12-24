@@ -9,23 +9,21 @@ p {
 }
 // === Посилання ===
 
-.link {
+a {
   text-decoration: none;
   color: currentColor;
 }
 
 // === Стилі списку ===
 
-.list {
+ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-//  === Стилі img ===
-
-img {
+svg {
   display: block;
-  max-width: 100%;
-  height: auto;
+  padding: 0;
+  margin: 0;
 }
