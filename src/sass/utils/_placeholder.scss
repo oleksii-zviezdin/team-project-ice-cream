@@ -37,6 +37,8 @@
   cursor: pointer;
   text-align: center;
 
+  transition: var(--timing-function);
+
   &:hover,
   &:focus {
     background-color: #0a8817;
