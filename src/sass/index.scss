@@ -1,13 +1,18 @@
 //add normalized
 @import './common';
 
-//add components
-@import './galary';
-@import './feedback';
-
 //add base styles
 @import './base/base';
 @import './base/reset';
+
+//add components
+@import './galary';
+@import './feedback';
+@import './contacts';
+
+// add modal window
+@import './locations-modal';
+@import './read-more-modal';
 
 //add utils
 @import './utils/variables';
