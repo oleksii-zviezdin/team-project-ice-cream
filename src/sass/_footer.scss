@@ -1,0 +1,189 @@
+.footer-section__container {
+    @extend %container;
+}
+
+.footer-section {
+    position: relative;
+    background-color: var(--main-bg-cl);
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+    @media screen and (min-width:768px) {
+        padding-top: 20px;
+        padding-bottom: 12px;
+    }
+    
+    &--positioning {
+        @media screen and (min-width:768px) {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media screen and (min-width:1200px) {
+            padding-top: 60px;
+            align-items: center;
+        }
+    }
+
+    // FOOTER TITLE
+
+    &__main-title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color:var(--secondary-text-cl);
+        margin-bottom: 16px;
+
+        @media screen and (max-width:767px) {
+            width: 250px;
+        }
+
+        @media screen and (min-width:768px) and (max-width:1199px) {
+            width: 360px;
+        }
+
+        @media screen and (min-width:768px) {
+            font-size: 26px;
+            line-height: 32px;
+            letter-spacing: 0.04em;
+            margin-bottom: 8px;
+        }
+
+        @media screen and (min-width:1200px) {
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 37px;
+            letter-spacing: 0.04em;
+        }
+    }
+
+    // SLOGAN
+
+    &__main-text {
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 41px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--secondary-text-cl);
+        margin-bottom: 60px;
+
+        @media screen and (min-width:768px) {
+            font-size: 48px;
+            line-height: 59px;
+            letter-spacing: 0.06em;
+            margin-bottom: 32px;
+        }
+        
+        @media screen and (max-width:1199px) {
+            width: 250px;
+        }
+        
+        @media screen and (min-width:1200px) {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 58px;
+            line-height: 71px;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            margin-bottom: 60px;
+        }
+    }
+
+    //  SOCIALS
+
+    &__socials-list {
+        display: flex;
+        gap: 20px;
+        justify-content: end;
+        margin-bottom: 20px;
+
+        @media screen and (min-width:768px) {
+            margin-bottom: 34px; 
+        }
+
+        @media screen and (min-width:768px) and (max-width:1199px) {
+            margin-top: 60px;
+        }
+    }
+
+    // TO CONTACT
+
+    &__contact {
+        display: flex;
+        justify-content: end;
+        margin-bottom: 40px;
+    }
+    
+    &__contact-text {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 186%;
+        text-align: right;
+        color:var(--main-text-cl);
+        margin-right: 5px;
+
+        @media screen and (min-width:768px) {
+            font-size: 14px;
+            line-height: 186%;
+        }
+    }
+
+    &__contact-number {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 186%;
+        text-align: right;
+        color: var(--secondary-text-cl);
+
+        @media screen and (min-width:768px) {
+            font-size: 14px;
+            line-height: 186%;
+        }
+    }
+}
+
+.footer-section__socials-link {
+    fill: var(--main-bg-cl);
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+    &:hover,
+    &:focus {
+       fill: var(--secondary-text-cl);
+    }
+}
+
+// LINE 
+
+.footer-end-text--wrap-before::before {
+    content: " ";
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--secondary-text-cl);
+    margin-bottom:20px;
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 12px;
+    }
+}
+
+// TEXT UNDER THE LINE
+
+.footer-end-text--wrap {
+    @media screen and (min-width:768px) {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
+}
+
+.footer-end-text {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 152%;
+    color: #7A7A7A;
+}
