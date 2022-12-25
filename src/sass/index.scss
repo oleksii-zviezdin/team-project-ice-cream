@@ -1,9 +1,6 @@
 //add normalized
 @import './common';
 
-//add base styles
-@import './base/base';
-@import './base/reset';
 
 //add components
 @import './galary';
@@ -14,6 +11,10 @@
 @import './locations-modal';
 @import './read-more-modal';
 
+//add base styles
+@import './base/base';
+@import './base/reset';
+
 //add utils
 @import './utils/variables';
 @import './utils/placeholder';
@@ -23,3 +24,4 @@
 
 
 @import './advantages';
+@import './product';
