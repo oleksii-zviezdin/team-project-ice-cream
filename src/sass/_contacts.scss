@@ -56,16 +56,28 @@
 }
 
 .contacts-card {
+  width: 280px;
+
   padding: 40px 32px 24px 32px;
 
   background-color: var(--secondary-text-cl);
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 
+  @media screen and (min-width:768px) {
+    width: 224px;
+    
+  }
+
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 16px;
     }
+  }
+  
+  @media screen and (min-width:1200px) {
+    width: 368px;
+    
   }
 
   // @media screen and (min-width: 768px) {
