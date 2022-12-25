@@ -12,12 +12,15 @@
 @import './utils/visually-hidden';
 
 //add components
-@import './galary';
-@import './feedback';
-@import './hero';
-@import './contacts';
-@import './advantages';
+@import './components/header';
+@import './components/nav';
+@import './components/mobile-menu';
+@import './components/galary';
+@import './components/feedback';
+@import './components/hero';
+@import './components/contacts';
+@import './components/advantages';
 
 // add modal window
-@import './locations-modal';
-@import './read-more-modal';
+@import './components/locations-modal';
+@import './components/read-more-modal';

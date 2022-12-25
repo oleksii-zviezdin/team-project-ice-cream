@@ -1,0 +1,38 @@
+.nav {
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        margin-left: auto;
+        margin-right: 205px;
+    }
+}
+
+.nav__list {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        gap: 28px;
+        align-items: center;
+
+    }
+}
+
+.nav__link {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+
+    align-items: center;
+
+    color: #FCFCFC;
+
+    transition: color var(--timing-function);
+
+
+    &:hover,
+    &:focus {
+        color: #F8D24E;
+    }
+}
