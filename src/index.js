@@ -1,5 +1,5 @@
 // add slider js
-import './js/slider';
+// import './js/slider';
 
 // add modal js
-import './js/modal';
+// import './js/modal';
