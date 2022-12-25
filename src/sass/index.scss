@@ -5,17 +5,17 @@
 @import './base/base';
 @import './base/reset';
 
+//add utils
+@import './utils/variables';
+@import './utils/placeholder';
+@import './utils/mixins';
+@import './utils/visually-hidden';
+
 //add components
 @import './galary';
 @import './feedback';
 @import './contacts';
 
 // add modal window
-// @import './locations-modal';
-// @import './read-more-modal';
-
-//add utils
-@import './utils/variables';
-@import './utils/placeholder';
-@import './utils/mixins';
-@import './utils/visually-hidden';
+@import './locations-modal';
+@import './read-more-modal';
