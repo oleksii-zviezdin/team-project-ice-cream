@@ -67,12 +67,17 @@
       margin-left: auto;
 
       @media screen and (min-width:480px) {
-            width: 152px; 
             font-weight: 400;
          }
 
       @media screen and (min-width:768px) {
          font-size: 16px;
+         width: 152px;
+      }
+
+      
+      @media screen and (min-width:480px) {
+         font-weight: 400;
          width: 368px;
       }
    }
