@@ -28,15 +28,19 @@
     z-index: 20;
 
     text-align: center;
-    border: 2px solid #f8d24e;
+    border: 2px solid var(--accent-bg-txt-cl);
     border-radius: 10px;
     background-color: #fff;
-    overflow-y: scroll;
 
     transition: 0.3s all;
 
+    @media screen and (max-width: 767px) {
+        overflow-y: scroll;
+        }
+
     &--icecream {
         height: 100%;
+        overflow-y: scroll;
     }
 
     @media screen and (min-width: 768px) {
@@ -59,25 +63,26 @@
     top: 16px;
     right: 16px;
 
-    fill: #131313;
+    fill: var(--main-text-cl);
     cursor: pointer;
 
-    transition: fill var(--animation-function);
+    transition: fill var(--timing-function);
 
     &:hover,
     &:focus {
-        fill: #F8D24E;
+        fill: var(--accent-bg-txt-cl);
     }
 }
 
-.modal__title {
+.modal-first-second__title {
     display: block;
     text-align: center;
     margin: auto;
     margin-bottom: 20px;
     width: 142px;
 
-    color: rgba(19, 19, 19, 1);
+    color: var(--main-text-cl);
+    user-select: none;
 
     font-family: 'Seymour One';
     font-style: normal;
@@ -106,16 +111,16 @@
     padding: 11px 16px;
 
     outline: unset;
-    color: rgb(19, 19, 19);
+    color: var(--main-text-cl);
     background: rgba(248, 210, 78, 0.1);
-    border: 1px solid #84A178;
+    border: 1px solid var(--main-bg-cl);
     border-radius: 10px;
 
     font-size: 12px;
     line-height: calc(17 / 12);
 
     &::placeholder {
-        color: rgb(19, 19, 19);
+        color: var(--main-text-cl);
     }
 
     @media screen and (min-width: 568px) {
@@ -124,7 +129,7 @@
 }
 
 .modal-form__field {
-    transition: outline-color var(--animation-function), box-shadow var(--animation-function);
+    transition: outline-color var(--timing-function), box-shadow var(--timing-function);
 
     &:not(:placeholder-shown):valid:required {
         outline-color: rgba(0, 255, 0, 0.5);
@@ -143,35 +148,9 @@
 }
 
 .modal-form__button {
-    margin: 0 auto;
-    padding: 12px 34px;
-
-    width: 121px;
-    height: 42px;
-    text-align: center;
-
-    cursor: pointer;
-
-    outline: unset;
-    color: #131313;
-    background-color: rgb(248, 210, 78);
+    @extend %button;
     border: none;
-    border-radius: 10px;
-
-    font-weight: 600;
-    font-size: 12px;
-    line-height: calc(15 / 12);
-
-    transition: background-color var(--animation-function);
-
-    &:hover,
-    &:focus {
-        background-color: rgb(10, 136, 23);
-    }
-
-    &:focus {
-        color: white;
-    }
+    padding: 12px 34px;
 }
 
 // MODAL-BUY
@@ -198,11 +177,11 @@
 
 .modal__checkbox:checked+.modal__label,
 .modal__checkbox:focus+.modal__label {
-    transition: background-color var(--animation-function);
+    transition: background-color var(--timing-function);
     background-color: #AEC6A5;
 
     &--second {
-        background-color: #F8D24E;
+        background-color: var(--accent-bg-txt-cl);
     }
 
     &--third {
@@ -221,6 +200,7 @@
     border: 2px solid #96AF8C;
     filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
     border-radius: 15px;
+    user-select: none;
 
     &--second {
         border: 2px solid #EFD478;
@@ -236,7 +216,7 @@
     margin-bottom: 20px;
     text-align: center;
 
-    color: #131313;
+    color: var(--main-text-cl);
 
     font-weight: 700;
     font-size: 16px;
