@@ -1,10 +1,6 @@
 //add normalized
 @import './common';
 
-//add components
-@import './galary';
-@import './feedback';
-
 //add base styles
 @import './base/base';
 @import './base/reset';
@@ -15,4 +11,17 @@
 @import './utils/mixins';
 @import './utils/visually-hidden';
 
+//add components
+@import './components/header';
+@import './components/nav';
+@import './components/mobile-menu';
+@import './components/galary';
+@import './components/feedback';
+@import './components/hero';
+@import './components/contacts';
+@import './components/advantages';
 @import './footer';
+
+// add modal window
+@import './components/locations-modal';
+@import './components/read-more-modal';
