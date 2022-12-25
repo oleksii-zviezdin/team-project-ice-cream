@@ -1,13 +1,123 @@
-<section>
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, aliquid
-    amet tempore qui, necessitatibus magnam molestiae ducimus quibusdam eius
-    nostrum ad odio maiores laudantium architecto totam. Ducimus esse
-    consequuntur velit!
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus neque fuga
-    ratione, quibusdam expedita id dolor eaque hic facere esse obcaecati. Autem
-    iste voluptatibus saepe? Ullam numquam aliquam sint autem.
-  </p>
+<section class="hero__section">
+  <div class="hero__container container">
+    <div class="hero__home">
+      <div>
+        <h1 class="hero__title">
+          ice cream <br />
+          made with <br />
+          <span class="hero__accent">passion</span>
+        </h1>
+        <ul class="hero__menu list">
+          <li class="menu__item">
+            <a href="" class="hero__btn link">Products</a>
+          </li>
+          <li class="menu__item">
+            <a href="" class="hero__link link">How it’s made?</a>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="hero__list list">
+        <li class="hero__item">
+          <p class="hero__numbers">16</p>
+        </li>
+        <li class="hero__item">
+          <p class="hero__text mb">cafes</p>
+        </li>
+        <li class="hero__item">
+          <p class="hero__numbers">23</p>
+        </li>
+        <li class="hero__item">
+          <p class="hero__text">food trucks</p>
+        </li>
+      </ul>
+    </div>
+
+    <picture class="dots">
+      <source
+        media="(min-width:1200px )"
+        srcset="
+          ./images/hero/dots-l1200x1.png 1x,
+          ./images/hero/dots-l2400x2.png 2x,
+          ./images/hero/dots-l3600x3.png 3x
+        "
+      />
+
+      <source
+        media="(min-width:768px )"
+        srcset="
+          ./images/hero/dots-m768x1.png  1x,
+          ./images/hero/dots-m1536x2.png 2x,
+          ./images/hero/dots-m2304x3.png 3x
+        "
+      />
+
+      <source
+        media="(max-width:767px )"
+        srcset="
+          ./images/hero/dots-s320x1.png 1x,
+          ./images/hero/dots-s640x2.png 2x,
+          ./images/hero/dots-s960x3.png 3x
+        "
+      />
+      <img src="./images/hero/dots-l1200x1.png" alt="" />
+    </picture>
+    <picture class="ice-cream">
+      <source
+        media="(min-width:1200px )"
+        srcset="
+          ./images/hero/ice-cream-l456x1.png  1x,
+          ./images/hero/ice-cream-l912x2.png  2x,
+          ./images/hero/ice-cream-l1368x3.png 3x
+        "
+      />
+
+      <source
+        media="(min-width:768px )"
+        srcset="
+          ./images/hero/ice-cream-m268x1.png 1x,
+          ./images/hero/ice-cream-m536x2.png 2x,
+          ./images/hero/ice-cream-m804x3.png 3x
+        "
+      />
+
+      <source
+        media="(max-width:767px )"
+        srcset="
+          ./images/hero/ice-cream-s177x1.png 1x,
+          ./images/hero/ice-cream-s350x2.png 2x,
+          ./images/hero/ice-cream-s531x3.png 3x
+        "
+      />
+      <img src="./images/hero/ice-cream-l456x1.png" alt="" />
+    </picture>
+
+    <picture class="plate">
+      <source
+        media="(min-width:1200px )"
+        srcset="
+          ./images/hero/plate-l225x1.png 1x,
+          ./images/hero/plate-l450x2.png 2x,
+          ./images/hero/plate-l675x3.png 3x
+        "
+      />
+
+      <source
+        media="(min-width:768px )"
+        srcset="
+          ./images/hero/plate-m152x1.png 1x,
+          ./images/hero/plate-m304x2.png 2x,
+          ./images/hero/plate-m456x3.png 3x
+        "
+      />
+
+      <img src="./images/hero/plate-l225x1.png" alt="" />
+    </picture>
+    <div class="test">
+      <p class="hero__subtitle">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </p>
+    </div>
+  </div>
 </section>
