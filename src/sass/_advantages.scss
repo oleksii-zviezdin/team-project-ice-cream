@@ -1,0 +1,115 @@
+.container{
+   @extend %container;
+}
+.advantages {
+   padding-top: 25px;
+   padding-bottom: 32px;
+   background-color: var(--main-bg-cl);
+   width: 100%;
+
+   @media screen and (min-width:480px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+   }
+   @media screen and (min-width:768px) {
+      padding-bottom: 80px;
+   }
+   &__card-set{
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      color: var(--secondary-text-cl);
+      text-align: center;
+         @media screen and (min-width:480px) {
+               gap: 80px;             
+            }
+         @media screen and (min-width:768px) {
+            display: flex;
+            gap: 32px;
+            }      
+   }
+   &__item{
+      text-align: center;
+
+   }
+   &__item:not(:last-child) {
+      margin-bottom: 28px;
+      @media screen and (min-width:480px) {
+         margin: 0;
+      }
+   }
+   &__count{
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.2;
+        
+      letter-spacing: 0.04em;         
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      
+      @media screen and (min-width:480px) {
+         font-size: 48px;
+         text-transform: none;
+         margin-bottom: 12px;         
+      }
+
+      @media screen and (min-width:768px) {
+         font-size: 58px;
+         margin-bottom: 0;
+      }
+   }
+   &__text {
+      @include Text (12px, 14px);
+      font-weight: 700;
+      line-height: 1.6;
+      width: 230px;
+      margin-right: auto;
+      margin-left: auto;
+
+      @media screen and (min-width:480px) {
+            font-weight: 400;
+         }
+
+      @media screen and (min-width:768px) {
+         font-size: 16px;
+         width: 152px;
+      }
+
+      
+      @media screen and (min-width:480px) {
+         font-weight: 400;
+         width: 368px;
+      }
+   }
+}
+.advantages__item::before {
+   content: ' ';
+   display: block;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   background-color: #F8D24E;
+   margin-right: auto;
+   margin-left: auto;
+   margin-bottom: 16px;
+   background-repeat: no-repeat;
+   background-position: center;
+
+      @media screen and (min-width:480px) {
+            margin-bottom: 32px;
+         }
+
+      @media screen and (min-width:768px) {
+            margin-bottom: 40px;
+      }
+
+}
+.advantages__item:nth-child(1)::before{
+   background-image: url('../images/advantages/cow.png');
+}
+.advantages__item:nth-child(2)::before {
+   background-image: url('../images/advantages/weight.png');
+}
+.advantages__item:nth-child(3)::before {
+   background-image: url('../images/advantages/ice-crema.png');
+}
