@@ -21,10 +21,10 @@
       color: var(--secondary-text-cl);
       text-align: center;
          @media screen and (min-width:480px) {
-               display: flex;
                gap: 80px;             
             }
          @media screen and (min-width:768px) {
+            display: flex;
             gap: 32px;
             }      
    }
