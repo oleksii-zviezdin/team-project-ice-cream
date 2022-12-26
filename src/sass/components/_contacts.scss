@@ -133,8 +133,8 @@
 
   @media screen and (min-width: 768px) {
     &:not(:last-child) {
-    margin-bottom: 64px;
-  }
+      margin-bottom: 64px;
+    }
 
     &:not(:last-child)::after {
       bottom: -32px;
@@ -174,8 +174,6 @@
   line-height: 1.83;
 
   color: #d6936d;
-
-  transition: text-decoration 2500ms var(--timing-function);
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -248,7 +246,10 @@
   align-items: center;
   gap: 4px;
 
+  padding: 0;
+
   width: 196px;
+  height: 42px;
 
   font-size: 14px;
   line-height: 1.29;
