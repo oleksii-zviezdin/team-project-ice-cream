@@ -1,19 +1,17 @@
 .header {
-    display: flex;
-    align-items: center;
-    padding-left: 16px;
     background-color: var(--main-bg-cl);
     
     @media screen and (min-width: 1200px) {
-        
+        // display: flex;
+        // align-items: center;
+        // padding-left: 16px;
+        align-items: center;
         height: 65px;
     }
-    
-
 }
 .header__container {
     @extend %container;
-
+    
     display: flex;
     padding-top: 12px;
     padding-bottom: 0;
@@ -26,23 +24,24 @@
     }
     @media screen and (min-width: 1200px) {
         display: flex;
-        align-items: baseline;       
-        padding-top: 28px;
-        padding-left: 0;
-        
-        
-
-        
+        align-items: center;
+              
+        padding-top: 8px;
+        height: 65px;
     }
 }
-
-.logo {
-    padding-top: 12px;
-
+.header__nav {
+    display: none;
     @media screen and (min-width: 1200px) {
-        padding-top: 0;
+    display: flex;
+    align-items: baseline;
+    margin-left: auto;
+    padding-top: 20px;
+    height: 100%;
     }
 }
+
+
 
 .header__btn {
     display: none;
