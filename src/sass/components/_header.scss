@@ -6,14 +6,13 @@
     @extend %container;
 
     display: flex;
-    padding-top: 12px;
+    padding-top: 20px;
     padding-bottom: 12px;
 
     @media screen and (min-width: 1200px) {
         display: flex;
-        align-items:center;
-        
-        height: 65px;
+        align-items: center;
+        // height: 65px;
     }
 }
 
@@ -59,5 +58,9 @@
 
     @media screen and (min-width: 1200px) {
         margin-right: 0;
+        
     }
 }
+// .logo {
+//     padding-bottom: 8px;
+// }
