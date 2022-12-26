@@ -43,14 +43,14 @@
     }
 }
 
-.modal-grams__block {
+.modal-grams__list {
     display: flex;
     gap: 9px;
     margin-bottom: 40px;
     justify-content: center;
 }
 
-.modal-grams__wrap {
+.modal-grams__item {
     position: relative;
 
     display: flex;
@@ -126,6 +126,6 @@
     letter-spacing: 0.04em;
 
     &:not(:last-child) {
-        padding-bottom: 11px;
+        margin-bottom: 11px;
     }
 }

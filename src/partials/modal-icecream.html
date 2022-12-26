@@ -1,28 +1,29 @@
-<div class="modal modal--icecream" data-modal="2">
+<div class="overlay js-overlay-modal" data-modal="2">
+<div class="modal modal--icecream">
     <svg class="modal__cross js-modal-close" width="24" height="24">
         <use href="./images/icons.svg#modal-close"></use>   
     </svg>
-    <b class="modal__title">Chololate icecream</b>
+    <b class="modal-buy__title modal-buy__title--icecream">Chololate icecream</b>
     <span class="modal__img-ice"></span>
 
-    <div class="modal-grams__block">
-        <div class="modal-grams__wrap">
-            <span class="modal-grams__text">kcal</span>
+    <ul class="modal-grams__list">
+        <li class="modal-grams__item">
             <div class="modal-grams__inner">320</div>
-        </div>
-        <div class="modal-grams__wrap">
-            <span class="modal-grams__text">Prote...</span>
+            <span class="modal-grams__text">kcal</span>
+        </li>
+        <li class="modal-grams__item">
             <div class="modal-grams__inner">4g</div>
-        </div>
-        <div class="modal-grams__wrap">
-            <span class="modal-grams__text">Fats</span>
+            <span class="modal-grams__text">Prote...</span>
+        </li>
+        <div class="modal-grams__item">
             <div class="modal-grams__inner">8,2g</div>
+            <span class="modal-grams__text">Fats</span>
         </div>
-        <div class="modal-grams__wrap">
-            <span class="modal-grams__text">Carbs</span>
+        <li class="modal-grams__item">
             <div class="modal-grams__inner">40,4g</div>
-        </div>
-    </div>
+            <span class="modal-grams__text">Carbs</span>
+        </li>
+    </ul>
 
     <p class="modal__ingredients">Ingredients</p>
     
@@ -57,19 +58,20 @@
     <form class="modal-form" name="modal_form" autocomplete="off">
         <div class="modal-form__wrapper">
             <label class="modal-form__label">
-                <input class="modal-form__field" type="text" name="user_name" placeholder="Name" autocomplete="name"
-                    minlength="3" required>
+                <input class="modal-form__field inp" type="text" name="user_name" placeholder="Name" autocomplete="name"
+                    minlength="5" required>
             </label>
 
             <label class="modal-form__label">
-                <input class="modal-form__field" type="tel" name="user_tel" placeholder="Phone" autocomplete="tel"
-                    minlength="3" required>
+                <input class="modal-form__field inp" type="tel" name="user_tel" placeholder="Phone" autocomplete="tel"
+                    minlength="5" required>
             </label>
 
             <label class="modal-form__label">
                 <textarea class="modal-form__message" name="user_comment" rows="6" placeholder="Comment"></textarea>
             </label>
         </div>
-        <button class="modal-form__button" type="submit">Submit</button>
+        <button class="modal-form__button btnd" type="submit">Submit</button>
     </form>
+</div>
 </div>
