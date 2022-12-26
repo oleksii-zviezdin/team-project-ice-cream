@@ -179,9 +179,23 @@ margin-bottom: 32px;
     }
 }
     .about__img { 
-        padding-top: 22px;
+        top: 22px;
         position: absolute;
         border-radius: 50%;
+
+        @media screen and (min-width: 767.9px) {
+            top: 26px;
+            width: 330px;
+            height: 330px;
+            border-radius: 165px;}
+
+            @media screen and (min-width: 1199.9px) {
+                width: 490px;
+                height: 490px;
+                border-radius: 245px;
+                top: 35px;
+            }
+
      }
         
     
