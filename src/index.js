@@ -6,3 +6,7 @@ import './js/modal';
 
 // add modal js
 import './js/mobile-menu';
+
+// add disabled button
+
+import './js/button-disabled';
