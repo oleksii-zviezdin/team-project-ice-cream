@@ -6,3 +6,5 @@ import './js/modal';
 
 // add modal js
 import './js/mobile-menu';
+
+import './js/counter';
