@@ -97,6 +97,8 @@
   border: 2px solid var(--accent-bg-txt-cl);
   border-radius: 10px;
 
+  transition: border var(--timing-function);
+
   @media screen and (min-width: 768px) {
     font-size: 12px;
     line-height: 1.25;
@@ -133,6 +135,9 @@
 
   text-decoration-line: underline;
   color: var(--accent-bg-txt-cl);
+  transition: color var(--timing-function);
+
+  transition: color var(--timing-function);
 
   &:hover {
     color: #0a8817;
@@ -253,8 +258,7 @@
     bottom: 12%;
   }
 }
-
-.subtitle__conteiner {
+.subtitle__container {
   position: relative;
 }
 
