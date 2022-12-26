@@ -135,6 +135,7 @@
 
   text-decoration-line: underline;
   color: var(--accent-bg-txt-cl);
+  transition: color var(--timing-function);
 
   transition: color var(--timing-function);
 
@@ -257,8 +258,7 @@
     bottom: 12%;
   }
 }
-
-.subtitle__conteiner {
+.subtitle__container {
   position: relative;
 }
 
