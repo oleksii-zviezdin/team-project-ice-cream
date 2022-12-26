@@ -74,6 +74,7 @@ img {
   height: auto;
 }
 
+// === модалка ===
 .overlay {
   opacity: 0;
   visibility: hidden;
@@ -87,17 +88,13 @@ img {
 
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 20;
-  transition: opacity 250ms var(--timing-function);
+  transition: opacity var(--timing-function);
 
   overflow-y: scroll;
 }
 
-// === модалка ===
 .modal {
-  opacity: 0;
-  visibility: hidden;
-
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -122,4 +119,10 @@ img {
 .active {
   opacity: 1;
   visibility: visible;
+
+  z-index: 25;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
