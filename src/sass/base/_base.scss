@@ -126,3 +126,22 @@ img {
 .no-scroll {
   overflow: hidden;
 }
+
+.ice-cream {
+  animation: top-to-bottom 1000ms ease 200ms both;
+}
+
+
+@keyframes top-to-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
