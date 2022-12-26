@@ -7,7 +7,7 @@ $('.count').each(function () {
       },
       {
         duration: 3000,
-        easing: 'swing',
+        easing: 'linear',
         step: function (now) {
           $(this).text(Math.ceil(now));
         },
