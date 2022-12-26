@@ -321,10 +321,10 @@
 .hero__container {
   @extend %container;
   position: relative;
-  min-height: 420px;
+  height: 420px;
 
   @media screen and (min-width: 768px) {
-    min-height: 349px;
+    height: 349px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -351,13 +351,17 @@
 .ice-cream {
   position: absolute;
   bottom: 0;
-
-  left: 28%;
+  left: 29%;
+  // left: 185px;
   z-index: 2;
 
   @media screen and (min-width: 480px) {
-    left: 28%;
+    left: 29%;
   }
+
+  // @media screen and (max-width: 767px) {
+  //   left: 110px;
+  // }
 
   @media screen and (min-width: 768px) {
     left: 53%;
@@ -371,13 +375,15 @@
   z-index: 1;
 
   bottom: 0;
-  left: 10%;
-  // @media screen and (min-width: 320px) {
-  // }
+  left: 0;
 
   @media screen and (min-width: 480px) {
-    left: 10%;
+    left: 0;
   }
+
+  // @media screen and (max-width: 767px) {
+  //   left: 50px;
+  // }
 
   @media screen and (min-width: 768px) {
     bottom: 0;
