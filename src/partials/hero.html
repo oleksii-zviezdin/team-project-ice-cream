@@ -1,5 +1,5 @@
 <section class="hero__section">
-  <div class="hero__container container">
+  <div class="hero__container">
     <div class="hero__home">
       <div>
         <h1 class="hero__title">
@@ -19,16 +19,13 @@
 
       <ul class="hero__list list">
         <li class="hero__item">
-          <p class="hero__numbers">16</p>
+          <p class="hero__text"><span class="hero__numbers">16</span>cafes</p>
         </li>
+
         <li class="hero__item">
-          <p class="hero__text mb">cafes</p>
-        </li>
-        <li class="hero__item">
-          <p class="hero__numbers">23</p>
-        </li>
-        <li class="hero__item">
-          <p class="hero__text">food trucks</p>
+          <p class="hero__text">
+            <span class="hero__numbers">23</span>food trucks
+          </p>
         </li>
       </ul>
     </div>
@@ -59,7 +56,7 @@
           ./images/hero/dots-s960x3.png 3x
         "
       />
-      <img src="./images/hero/dots-l1200x1.png" alt="" />
+      <img src="./images/hero/dots-l1200x1.png" alt="" width="1200" />
     </picture>
     <picture class="ice-cream">
       <source
@@ -112,11 +109,14 @@
 
       <img src="./images/hero/plate-l225x1.png" alt="" />
     </picture>
-    <div class="test">
+    <div class="subtitle__conteiner">
       <p class="hero__subtitle">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et
       </p>
+      <svg class="subtitle__icon" width="20" height="20">
+        <use href="./images/icons.svg#arrow"></use>
+      </svg>
     </div>
   </div>
 </section>
