@@ -156,6 +156,7 @@
   margin-top: 32px;
 
   @media screen and (min-width: 768px) {
+    gap: 34px;
     margin-top: 24px;
   }
 
@@ -269,7 +270,7 @@
   @media screen and (min-width: 768px) {
     display: block;
 
-    margin-left: 216px;
+    margin-left: 210px;
     margin-top: 39px;
 
     font-weight: 400;
@@ -286,7 +287,7 @@
     margin-left: 257px;
     margin-top: 110px;
 
-    width: 200px;
+    width: 220px;
 
     font-weight: 400;
     font-size: 14px;
@@ -301,18 +302,18 @@
     display: block;
     position: absolute;
 
-    left: 248;
-    bottom: 30;
+    left: 211;
+    top: 100;
 
-    width: 45px;
+    width: 43px;
 
     fill: var(--secondary-text-cl);
   }
 
   @media screen and (min-width: 1200px) {
-    bottom: 75;
-    left: 273;
-    width: 50px;
+    left: 257;
+    top: 100;
+    width: 45px;
   }
 }
 
