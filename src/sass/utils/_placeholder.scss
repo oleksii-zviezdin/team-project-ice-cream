@@ -5,6 +5,7 @@
   padding-left: 20px;
   padding-right: 20px;
 
+
   @media screen and (min-width: 480px) {
     width: 480px;
   }
@@ -35,6 +36,8 @@
   border-radius: var(--border-radius);
   cursor: pointer;
   text-align: center;
+
+  transition: var(--timing-function);
 
   &:hover,
   &:focus {

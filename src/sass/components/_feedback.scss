@@ -1,13 +1,21 @@
 
 .feedback__container {
+    width: 100%;
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 80px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 40px;
     background-color: transparent;
+
+    @media screen and (min-width: 480px) {
+            width: 480px;
+        }
     
         @media screen and (min-width: 768px) {
+            width: 768px;
             padding-top: 100px;
             padding-left: 32px;
             padding-right: 32px;
@@ -15,6 +23,7 @@
         }
     
         @media screen and (min-width: 1200px) {
+            width: 1200px;
             padding-top: 140px;
             padding-left: 116px;
             padding-right: 116px;
@@ -37,8 +46,8 @@
 .swiper-slide {
     text-align: center;
     font-size: 18px;
+    
     background: transparent;
-
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -56,8 +65,9 @@
     align-items: center;
 }
 .feedback__text-wrapper {
+    width: 80%;
     box-sizing: border-box;
-    background-color: rgba(132, 161, 120, 1);
+    background-color: var(--main-bg-cl);
     min-height: 138px;
     padding-top: 35px;
     padding-left: 39px;
@@ -81,22 +91,22 @@
         }
 }
 .feedback__text {
-    font-family: Montserrat;
+    font-family: var(--main-font);
     font-size: 16px;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 1.88;
     letter-spacing: 0.04em;
     text-align: center;
-    color: #FCFCFC;
+    color: var(--secondary-text-cl);
 }
 .feedback__name {
-    font-family: Montserrat;
+    font-family: var(--main-font);
     font-size: 16px;
     font-weight: 500;
-    line-height: 30px;
-    letter-spacing: 0em;
+    line-height: 1.88;
+    letter-spacing: 0;
     text-align: center;
-    color: #131313;
+    color: var(--main-text-cl);
 }
 
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
@@ -108,12 +118,10 @@
     width: 12px;
     height: 12px;
     text-align: center;
-    color: #000;
     opacity: 1;
-    background: rgba(217, 217, 217, 1);
+    background: #D9D9D9;
 }
 
 .swiper-pagination-bullet-active {
-    color: #fff;
-    background: rgba(132, 161, 120, 1);
+    background: var(--main-bg-cl);
 }

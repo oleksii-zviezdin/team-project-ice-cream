@@ -1,0 +1,75 @@
+<div class="modal modal--icecream" data-modal="2">
+    <svg class="modal__cross js-modal-close" width="24" height="24">
+        <use href="./images/icons.svg#modal-close"></use>   
+    </svg>
+    <b class="modal__title">Chololate icecream</b>
+    <span class="modal__img-ice"></span>
+
+    <div class="modal-grams__block">
+        <div class="modal-grams__wrap">
+            <span class="modal-grams__text">kcal</span>
+            <div class="modal-grams__inner">320</div>
+        </div>
+        <div class="modal-grams__wrap">
+            <span class="modal-grams__text">Prote...</span>
+            <div class="modal-grams__inner">4g</div>
+        </div>
+        <div class="modal-grams__wrap">
+            <span class="modal-grams__text">Fats</span>
+            <div class="modal-grams__inner">8,2g</div>
+        </div>
+        <div class="modal-grams__wrap">
+            <span class="modal-grams__text">Carbs</span>
+            <div class="modal-grams__inner">40,4g</div>
+        </div>
+    </div>
+
+    <p class="modal__ingredients">Ingredients</p>
+    
+    <table class="modal-table">
+        <tbody>
+            <tr class="modal-table__row">
+                <td class="modal-table__data">Milk</td>
+                <td class="modal-table__data">100ML</td>
+            </tr>
+            <tr class="modal-table__row">
+                <td class="modal-table__data">Belgian chocolate</td>
+                <td class="modal-table__data">20g</td>
+            </tr>
+            <tr class="modal-table__row">
+                <td class="modal-table__data">Cream</td>
+                <td class="modal-table__data">150ml</td>
+            </tr>
+            <tr class="modal-table__row">
+                <td class="modal-table__data">Cocoa powder</td>
+                <td class="modal-table__data">30g</td>
+            </tr>
+            <tr class="modal-table__row">
+                <td class="modal-table__data">Sugar</td>
+                <td class="modal-table__data">40g</td>
+            </tr>
+            <tr class="modal-table__row">
+                <td class="modal-table__data">Vanilla sugar</td>
+                <td class="modal-table__data">10g</td>
+            </tr>
+        </tbody>
+    </table>
+    <form class="modal-form" name="modal_form" autocomplete="off">
+        <div class="modal-form__wrapper">
+            <label class="modal-form__label">
+                <input class="modal-form__field" type="text" name="user_name" placeholder="Name" autocomplete="name"
+                    minlength="3" required>
+            </label>
+
+            <label class="modal-form__label">
+                <input class="modal-form__field" type="tel" name="user_tel" placeholder="Phone" autocomplete="tel"
+                    minlength="3" required>
+            </label>
+
+            <label class="modal-form__label">
+                <textarea class="modal-form__message" name="user_comment" rows="6" placeholder="Comment"></textarea>
+            </label>
+        </div>
+        <button class="modal-form__button" type="submit">Submit</button>
+    </form>
+</div>
