@@ -2,10 +2,12 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+  cursor: url('../cursor.png'), auto;
 }
 
 body {
@@ -14,9 +16,8 @@ body {
   font-size: 14px;
   letter-spacing: 0.04em;
 
-  background-repeat: repeat-y;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed;
 
   background-image: url(../images/background-body/background_mobile@1x.jpg);
@@ -74,6 +75,7 @@ img {
   height: auto;
 }
 
+// === модалка ===
 .overlay {
   opacity: 0;
   visibility: hidden;
@@ -86,23 +88,18 @@ img {
   height: 100%;
 
   background-color: rgba(0, 0, 0, 0.2);
-  z-index: 20;
-  transition: opacity 250ms var(--timing-function);
+  z-index: 2000;
+  transition: opacity var(--timing-function);
 
   overflow-y: scroll;
 }
 
-
-// === модалка ===
 .modal {
-  opacity: 0;
-  visibility: hidden;
-
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 30;
+  z-index: 3000;
 
   width: 280px;
 
@@ -118,9 +115,66 @@ img {
     width: calc(100% - 30px);
   }
 }
+// кнопка-svg для модальних вікон 
+.close-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #131313;
+
+  cursor: pointer;
+
+  transition: color var(--timing-function);
+
+  @media screen and (min-width: 768px) {
+    width: 24px;
+    height: 24px;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-bg-txt-cl)
+  }
+}
+
+.close-button__icon {
+  fill: currentColor;
+}
 
 // === Клас для JS для виклику і появи модального вікна ===
 .active {
   opacity: 1;
   visibility: visible;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.ice-cream {
+  animation: top-to-bottom 1000ms ease 200ms both;
+}
+
+@keyframes top-to-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
