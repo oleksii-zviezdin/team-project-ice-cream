@@ -6,13 +6,16 @@
     @extend %container;
 
     display: flex;
+    align-items: center;
     padding-top: 12px;
-    padding-bottom: 12px;
+    
+
+    @media screen and (min-width: 768px) {
+        padding-top: 20px;
+    }
 
     @media screen and (min-width: 1200px) {
-        display: flex;
-        align-items: center;
-        height: 65px;
+        padding-top: 8px;
     }
 }
 
@@ -56,6 +59,8 @@
     }
 
     @media screen and (min-width: 1200px) {
+        margin-top: auto;
         margin-right: 0;
+        margin-bottom: 3px;
     }
 }
