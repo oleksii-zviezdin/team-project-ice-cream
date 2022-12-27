@@ -7,6 +7,8 @@ import './js/modal';
 // add modal js
 import './js/mobile-menu';
 
-// add disabled button
+// add counter
+import './js/counter';
 
+// add disabled button
 import './js/button-disabled';

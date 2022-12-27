@@ -2,6 +2,7 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
 *,
 *::before,
 *::after {
@@ -14,12 +15,11 @@ body {
   font-size: 14px;
   letter-spacing: 0.04em;
 
-  background-repeat: repeat-y;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed;
 
-  background-image: url(../images/background-body/Background_mobile@1x.jpg);
+  background-image: url(../images/background-body/background_mobile@1x.jpg);
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -34,7 +34,7 @@ body {
   }
 
   @media screen and (min-width: 768px) {
-    background-image: url(../images/background-body/Background_tablet@1x.jpg);
+    background-image: url(../images/background-body/background_tablet@1x.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -50,7 +50,7 @@ body {
   }
 
   @media screen and (min-width: 1200px) {
-    background-image: url(../images/background-body/Background_desktop@1x.jpg);
+    background-image: url(../images/background-body/background_desktop@1x.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -87,7 +87,7 @@ img {
   height: 100%;
 
   background-color: rgba(0, 0, 0, 0.2);
-  z-index: 20;
+  z-index: 2000;
   transition: opacity var(--timing-function);
 
   overflow-y: scroll;
@@ -98,7 +98,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 30;
+  z-index: 3000;
 
   width: 280px;
 
@@ -119,10 +119,26 @@ img {
 .active {
   opacity: 1;
   visibility: visible;
-
-  z-index: 25;
 }
 
 .no-scroll {
   overflow: hidden;
+}
+
+.ice-cream {
+  animation: top-to-bottom 1000ms ease 200ms both;
+}
+
+@keyframes top-to-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
