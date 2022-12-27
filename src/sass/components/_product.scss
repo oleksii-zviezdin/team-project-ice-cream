@@ -1,4 +1,5 @@
-.product {
+
+.product__container {
     @extend %container;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -18,7 +19,8 @@
         padding-left: 16px;
         padding-right: 16px;
     }
-
+}
+.product {
 
     &__label {
         display: block;
@@ -122,16 +124,65 @@
         border-radius: 50%;
         background-color: transparent;
         position: absolute;
-        z-index: 20;
-        top: -15%;
+        // z-index: 20;
+        top: -103px;
         left: 50%;
         transform: translateX(-50%);
+
+        @media screen and (min-width:768px) {
+             top:-120px ;
+        }
         @media screen and (min-width:1200px) {
-                height: 302px;
-                width: 302px;
-            }
+            top: -170px;    
+            height: 318px;
+            width: 302px;
+        }
 
     }
+
+    &::after {
+        content: ' ';
+        display: block;
+        width: 200px;
+        height: 211px;
+        // background-color: tomato;
+
+        position: absolute;
+        top: -114px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+
+        @media screen and (min-width:768px) {
+                top: -130px;
+            }
+        
+            @media screen and (min-width:1200px) {
+                top: -186px;
+                height: 318px;
+                width: 302px;
+            }
+        // background-image: url("../images/cre.jpg");
+    }
+
+    &:nth-child(1)::after {
+        background-image: url("../images/product/ice-cream.png");
+
+    }
+
+    &:nth-child(2)::after {
+        background-image: url("../images/product/ice-coffee.png");
+
+    }
+
+    &:nth-child(3)::after {
+        background-image: url("../images/product/milkshakes.png");
+
+    }
+
 }
 
 .card-set__item:nth-child(1)::before {
@@ -145,47 +196,7 @@
 .card-set__item:nth-child(3)::before {
     box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
 }
-.bgc-img {
-    
 
-    &::before {
-        content: ' ';
-        display: block;
-        width: 200px;
-        height: 211px;
-        // background-color: tomato;
-
-        position: absolute;
-        top: -30%;
-        left: 50%;
-        transform: translateX(-50%);
-
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-
-        @media screen and (min-width:1200px) {
-                height: 302px;
-                width: 302px;
-            }
-        // background-image: url("../images/cre.jpg");
-    }
-
-    &:nth-child(1)::before {
-        background-image: url("../images/product/ice-cream.png");
- 
-    }
-
-    &:nth-child(2)::before {
-        background-image: url("../images/product/ice-coffee.png");
-
-    }
-
-    &:nth-child(3)::before {
-        background-image: url("../images/product/milkshakes.png");
-
-    }
-}
 
 .counter {
     display: flex;
@@ -219,19 +230,19 @@
             font-size: 30px;
         }
 
-    &::before {
-        content: ' ';
-        display: block;
-        width: 200px;
-        height: 211px;
-        border-radius: 50%;
-        background-color: transparent;
-        position: absolute;
-        top: -97px;
-        left: 50%;
-        transform: translateX(-50%);
+    // &::before {
+    //     content: ' ';
+    //     display: block;
+    //     width: 200px;
+    //     height: 211px;
+    //     border-radius: 50%;
+    //     background-color: tomato;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 50%;
+    //     transform: translateX(-50%);
 
-    }
+    // }
 
 }
 
@@ -260,11 +271,20 @@
     margin-left: auto;
     margin-right: auto;    
     border: none;
-    margin-bottom: 0;    
+    margin-bottom: 0;
+
+    color: var(--main-text-cl);
+    
+    transition: var(--timing-function);
+        
+    &:hover,
+    &:focus {
+        scale: 1.5  ;
+    }
 
 }
 
 .svg {
     display: block;
-    fill: #131313;
+    fill: currentColor;
 }

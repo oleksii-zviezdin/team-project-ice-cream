@@ -81,6 +81,11 @@
          width: 368px;
       }
    }
+
+   &__block {
+      display: flex;
+      justify-content: center;
+   }
 }
 .advantages__item::before {
    content: ' ';
