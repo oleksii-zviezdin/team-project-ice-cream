@@ -27,7 +27,7 @@
     text-align: center;
     text-transform: uppercase;
     color: var(--secondary-text-cl);
-    padding-bottom: 12px;
+    margin-bottom: 12px;
 }
 
 .about__title {
@@ -125,7 +125,7 @@ margin-bottom: 32px;
         }
     
         .about__text-3 {
-        visibility: hidden;
+        display: none;
 
          @media screen and (min-width: 767.9px) 
          { 
@@ -143,7 +143,7 @@ margin-bottom: 32px;
         width: 334px;
         text-align: left;
         margin-bottom: 32px;
-        visibility: visible;
+        display: block;
         }
 
         @media screen and (min-width: 1199.9px) {
@@ -151,6 +151,7 @@ margin-bottom: 32px;
             line-height: 176%;
             width: 463px;
             margin-bottom: 54px;
+            display: block;
         }
     }
 
@@ -178,9 +179,23 @@ margin-bottom: 32px;
     }
 }
     .about__img { 
-        padding-top: 22px;
+        top: 22px;
         position: absolute;
         border-radius: 50%;
+
+        @media screen and (min-width: 767.9px) {
+            top: 26px;
+            width: 330px;
+            height: 330px;
+            border-radius: 165px;}
+
+            @media screen and (min-width: 1199.9px) {
+                width: 490px;
+                height: 490px;
+                border-radius: 245px;
+                top: 35px;
+            }
+
      }
         
     
@@ -202,7 +217,6 @@ margin-bottom: 32px;
     @media screen and (min-width: 767.9px) {
     display: flex;
     gap: 38px;
-    margin-bottom: 46px;
     }
 
     @media screen and (min-width: 1199.9px) {
@@ -219,6 +233,8 @@ margin-bottom: 32px;
     margin: auto;
     border: none;
     width: 164px;
+    text-align: left;
+    padding-left: 34px;
     position: relative;
 
     @media screen and (min-width: 767.9px) {
@@ -229,7 +245,7 @@ margin-bottom: 32px;
 .about__toggle-icon {
     position: absolute;
     top: 15px;
-    padding-left: 4px;
+    right: 35px;
 }
 
 .about__tablet {
