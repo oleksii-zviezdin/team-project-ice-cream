@@ -7,6 +7,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  cursor: url('../cursor.png'), auto;
 }
 
 body {
@@ -113,6 +114,41 @@ img {
   @media screen and (max-width: 310px) {
     width: calc(100% - 30px);
   }
+}
+// кнопка-svg для модальних вікон 
+.close-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #131313;
+
+  cursor: pointer;
+
+  transition: color var(--timing-function);
+
+  @media screen and (min-width: 768px) {
+    width: 24px;
+    height: 24px;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-bg-txt-cl)
+  }
+}
+
+.close-button__icon {
+  fill: currentColor;
 }
 
 // === Клас для JS для виклику і появи модального вікна ===
