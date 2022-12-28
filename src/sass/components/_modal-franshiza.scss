@@ -182,8 +182,7 @@
 
 
 
-.modal__btn--form:disabled {
-    background-color: #f8d24e80;
+.modal__btn--form {
     @extend %button;
     font-weight: 600;
     font-size: 14px;
@@ -202,4 +201,5 @@
     // background: #F8D24E;
     // border-radius: 10px;
     border: none;
+
 }

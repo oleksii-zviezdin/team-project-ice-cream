@@ -1,6 +1,7 @@
 <!-- <section> -->
-    <div class="overlay js-overlay-modal"  data-modal="5">
+    <div class="overlay js-overlay-modal" data-modal="5">
         <div class="modal modal-additional">
+            
             <h3 class="modal__title">
                 Thank you for your interest in owning an Ice Cream shop
             </h3>
@@ -12,34 +13,36 @@
                 information
                 below and we will reach out for additional information. We appreciate your patience.
             </p>
-    <button class="close-button js-modal-close">
-        <svg class="close-button__icon" width="20" height="20">
-            <use href="./images/icons.svg#modal-close"></use>
-        </svg>
-    </button>
+
+            <button class="close-button js-modal-close">
+                <svg class="close-button__icon" width="20" height="20">
+                    <use href="./images/icons.svg#modal-close"></use>
+                </svg>
+            </button>
+
             <form>
                 <div class="group-padding" role="group">
     
                     <div class="div__modal">
                         <input class="modal__form--field" type="text" name="user_name" id="user_name" 
-                        placeholder="Name" autocomplete="name" minlength="5" required="">
+                        placeholder="Name" autocomplete="name" minlength="5" required>
                     </div>
     
                     <div class="div__modal">
                         <input class="modal__form--field" type="tel" name="user_phone" id="user_phone" 
-                        placeholder="Phone" autocomplete="tel" minlength="5" required="">
+                        placeholder="Phone" autocomplete="tel" minlength="5" required>
                     </div>
     
                     <div class="div__modal">
                         <input class="modal__form--field" type="email" name="user_email" id="user_email"
-                            placeholder="Email" autocomplete="email" minlength="5" required="">
+                            placeholder="Email" autocomplete="email" minlength="5" required>
                     </div>
     
                     <textarea class="modal__form--message" name="user_message" id="user_message" rows="6"
-                        placeholder="Comment" autocomplete="comment" minlength="5" required=""></textarea>
+                        placeholder="Comment" minlength="5"></textarea>
                 </div>
     
-                <button class="modal__btn--form btnd" type="submit" disabled="true">Submit</button>
+                <button class="modal__btn--form" type="submit">Submit</button>
             </form>
         </div>
     </div>
