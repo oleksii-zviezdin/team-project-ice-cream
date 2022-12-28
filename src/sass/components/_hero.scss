@@ -21,10 +21,10 @@
 .hero__container {
   @extend %container;
   position: relative;
-  height: 420px;
+  height: 405px;
 
   @media screen and (min-width: 768px) {
-    height: 349px;
+    height: 340px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -40,10 +40,13 @@
 .hero__title {
   display: block;
 
+  width: 247px;
+  height: 97px;
+
   font-family: 'Seymour One';
   font-weight: 400;
   font-size: 26px;
-  line-height: 1.26;
+  line-height: 1.27;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
@@ -53,6 +56,9 @@
     font-size: 38px;
     line-height: 1.26;
     letter-spacing: 0.04em;
+
+    width: 367px;
+    height: 144px;
   }
 }
 
@@ -98,11 +104,6 @@
 
   transition: border var(--timing-function);
 
-  @media screen and (min-width: 768px) {
-    font-size: 12px;
-    line-height: 1.25;
-  }
-
   @media screen and (min-width: 1200px) {
     width: 134px;
     height: 42px;
@@ -128,15 +129,22 @@
   align-items: center;
   text-align: center;
 
+  font-style: normal;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 1.21;
+  font-size: 12px;
+  line-height: 1.25;
 
   text-decoration-line: underline;
+
   color: var(--accent-bg-txt-cl);
   transition: color var(--timing-function);
 
   transition: color var(--timing-function);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.21;
+  }
 
   &:hover {
     color: #0a8817;
@@ -150,11 +158,11 @@
 .hero__menu {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 15px;
   margin-top: 32px;
 
   @media screen and (min-width: 768px) {
-    gap: 34px;
+    gap: 22px;
     margin-top: 24px;
   }
 
@@ -214,9 +222,25 @@
 }
 
 .mb {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+
   margin-bottom: 16px;
 }
 
+.hero__list {
+  margin-top: 17px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-bottom: 80px;
+  }
+}
 .dots {
   position: absolute;
   z-index: 1;
@@ -268,22 +292,22 @@
   @media screen and (min-width: 768px) {
     display: block;
 
-    margin-left: 210px;
-    margin-top: 39px;
+    margin-left: 190px;
+    margin-top: 40px;
 
     font-weight: 400;
     font-size: 12px;
     line-height: 140%;
 
-    width: 150px;
+    width: 148px;
     height: 85px;
 
     color: var(--secondary-text-cl);
   }
 
   @media screen and (min-width: 1200px) {
-    margin-left: 257px;
-    margin-top: 110px;
+    margin-left: 248px;
+    margin-top: 65px;
 
     width: 220px;
 
@@ -300,8 +324,8 @@
     display: block;
     position: absolute;
 
-    left: 211;
-    top: 100;
+    left: 190;
+    top: 95;
 
     width: 43px;
 
@@ -309,7 +333,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    left: 257;
+    left: 250;
     top: 100;
     width: 45px;
   }
