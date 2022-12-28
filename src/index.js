@@ -12,3 +12,6 @@ import './js/counter';
 
 // add disabled button
 import './js/button-disabled';
+
+// add counter-advantages
+import './js/counter2';

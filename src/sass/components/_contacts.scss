@@ -151,6 +151,8 @@
 
   color: var(--main-text-cl);
 
+  transition: var(--timing-function);
+
   @media screen and (min-width: 768px) {
     font-size: 14px;
   }
@@ -158,6 +160,13 @@
   @media screen and (min-width: 1200px) {
     font-size: 16px;
   }
+}
+
+.contacts-card__tel:hover,
+.contacts-card__tel:focus,
+.contacts-card__mail:hover,
+.contacts-card__mail:focus {
+  font-weight: bold;
 }
 
 .contacts-card--city {
@@ -174,6 +183,8 @@
   line-height: 1.83;
 
   color: #d6936d;
+  
+  transition: var(--timing-function);
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -185,7 +196,9 @@
 
   &:hover,
   &:focus {
-    text-decoration: underline;
+    // text-decoration: underline;
+    // font-weight: bold;
+    text-shadow: 2px 2px 6px #d6936d;
   }
 }
 
