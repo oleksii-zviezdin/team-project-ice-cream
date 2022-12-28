@@ -138,3 +138,7 @@
 .swiper-pagination-bullet-active {
     background: var(--main-bg-cl);
 }
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    cursor: inherit;
+}
