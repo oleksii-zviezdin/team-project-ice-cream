@@ -1,20 +1,14 @@
 .feedback {
     padding-top: 80px;
-    padding-left: 20px;
-    padding-right: 20px;
     padding-bottom: 40px;
 
     @media screen and (min-width: 768px) {
         padding-top: 100px;
-        padding-left: 32px;
-        padding-right: 32px;
         padding-bottom: 80px;
     }
 
     @media screen and (min-width: 1200px) {
         padding-top: 140px;
-        padding-left: 116px;
-        padding-right: 116px;
         padding-bottom: 100px;
     }
 }
@@ -27,14 +21,20 @@
 
     @media screen and (min-width: 480px) {
         width: 480px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     @media screen and (min-width: 768px) {
         width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
     }
 
     @media screen and (min-width: 1200px) {
         width: 1200px;
+        padding-left: 116px;
+        padding-right: 116px;
     }
 }
 
