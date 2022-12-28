@@ -15,3 +15,4 @@ import './js/button-disabled';
 
 // add counter-advantages
 import './js/counter2';
+import './js/jquery-3.2.1.min';
