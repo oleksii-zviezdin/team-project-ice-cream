@@ -1,35 +1,43 @@
+.feedback {
+    padding-top: 80px;
+    padding-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 140px;
+        padding-bottom: 100px;
+    }
+}
 
 .feedback__container {
-    width: 100%;
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 80px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 40px;
     background-color: transparent;
 
     @media screen and (min-width: 480px) {
-            width: 480px;
-        }
-    
-        @media screen and (min-width: 768px) {
-            width: 768px;
-            padding-top: 100px;
-            padding-left: 32px;
-            padding-right: 32px;
-            padding-bottom: 80px;
-        }
-    
-        @media screen and (min-width: 1200px) {
-            width: 1200px;
-            padding-top: 140px;
-            padding-left: 116px;
-            padding-right: 116px;
-            padding-bottom: 100px;
-        }
+        width: 480px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+        padding-left: 116px;
+        padding-right: 116px;
+    }
 }
+
 .feedback__img-wrap {
     width: 85px;
     height: 85px;
@@ -46,7 +54,7 @@
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    
+
     background: transparent;
     /* Center slide text vertically */
     display: -webkit-box;
@@ -64,6 +72,7 @@
     -webkit-align-items: center;
     align-items: center;
 }
+
 .feedback__text-wrapper {
     width: 80%;
     box-sizing: border-box;
@@ -74,22 +83,25 @@
     padding-right: 39px;
     padding-bottom: 35px;
     border-radius: 10px;
+
     @media screen and (min-width: 768px) {
         min-height: 138px;
-            padding-top: 28px;
-            padding-left: 80px;
-            padding-right: 80px;
-            padding-bottom: 28px;
-            border-radius: 24px;
+        padding-top: 28px;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-bottom: 28px;
+        border-radius: 24px;
     }
-        @media screen and (min-width: 1200px) {
-            padding-top: 43px;
-            padding-left: 109px;
-            padding-right: 109px;
-            padding-bottom: 43px;
-            border-radius: 24px;
-        }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 43px;
+        padding-left: 109px;
+        padding-right: 109px;
+        padding-bottom: 43px;
+        border-radius: 24px;
+    }
 }
+
 .feedback__text {
     font-family: var(--main-font);
     font-size: 16px;
@@ -99,6 +111,7 @@
     text-align: center;
     color: var(--secondary-text-cl);
 }
+
 .feedback__name {
     font-family: var(--main-font);
     font-size: 16px;
@@ -111,7 +124,7 @@
 
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 var(--swiper-pagination-bullet-horizontal-gap,9px);
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 9px);
 }
 
 .swiper-pagination-bullet {
@@ -124,4 +137,8 @@
 
 .swiper-pagination-bullet-active {
     background: var(--main-bg-cl);
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    cursor: url('../cursor-pointer.png'), auto;
 }

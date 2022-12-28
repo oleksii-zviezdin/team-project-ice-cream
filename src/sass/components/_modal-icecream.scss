@@ -4,14 +4,12 @@
 
     color: #131313;
 
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 28px;
 }
 
-.modal__img-ice {
+.modal__img-products {
     position: relative;
     display: block;
     width: 132px;
@@ -19,13 +17,9 @@
     margin: 0 auto;
     margin-bottom: 30px;
 
-    background-color: #9CBE8F;
-
     border-radius: 50%;
     background-size: contain;
     background-repeat: no-repeat;
-    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
-    background-image: url(../images/modal-window/ice-cream/ice_small@1x.png);
 
     &::before {
         content: "";
@@ -40,6 +34,63 @@
         border-radius: 50%;
         background: #9CBE8F;
         box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    }
+    &--icecream {
+        background-color: #9CBE8F;
+        background-image: url(../images/modal-window/ice-cream/ice_small@1x.png);
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: url(../images/modal-window/ice-cream/ice_small@2x.png);
+            }
+        
+            @media screen and (min-device-pixel-ratio: 3),
+            screen and (min-resolution: 288dpi),
+            screen and (min-resolution: 3dppx) {
+                background-image: url(../images/modal-window/ice-cream/ice_small@3x.png);
+            }
+    }
+}
+.modal__img--icecoffee {
+        background: rgb(248, 210, 78);
+        background-size: contain;
+        background-image: url(../images/modal-window/modal-buy/2_small@1x.png);
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: url(../images/modal-window/modal-buy/2_small@2x.png);
+            }
+        
+            @media screen and (min-device-pixel-ratio: 3),
+            screen and (min-resolution: 288dpi),
+            screen and (min-resolution: 3dppx) {
+                background-image: url(../images/modal-window/modal-buy/2_small@3x.png);
+            }
+    &::before {
+        content: "";
+        background: rgba(248, 210, 78, 0.7);
+        box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.3);
+    }
+}
+.modal__img--milkshake {
+    background: rgb(213, 117, 63);
+    background-size: contain;
+    background-image: url(../images/modal-window/modal-buy/3_small@1x.png);
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/modal-window/modal-buy/3_small@2x.png);
+        }
+    
+        @media screen and (min-device-pixel-ratio: 3),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+        background-image: url(../images/modal-window/modal-buy/3_small@3x.png);
+        }
+    &::before {
+        content: "";
+        background: rgba(213, 117, 63, 0.7);
+        box-shadow: 0px 5.26027px 19.726px rgba(213, 117, 63, 0.3);
     }
 }
 
@@ -62,11 +113,28 @@
     border: 2px solid #9CBE8F;
     border-radius: 40px;
 
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 10px;
     line-height: calc(12 / 10);
+    transition: background-color var(--timing-function), box-shadow 600ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        background-color: rgba(156, 190, 143, 0.8);
+        box-shadow: 0px 5.26027px 19.726px rgba(156, 190, 143, 0.8);
+    }
+    &--icecoffee {
+        border: 2px solid #EFD478; 
+    }
+    &--icecoffee:hover {
+        background-color: rgba(248, 210, 78, 0.5);
+        box-shadow: 0px 5.26027px 19.726px rgba(248, 210, 78, 0.8);
+    }
+    &--milkshake {
+        border: 2px solid #D6936D;
+    }
+    &--milkshake:hover {
+            background-color: rgba(213, 117, 63, 0.5);
+            box-shadow: 0px 5.26027px 19.726px rgba(213, 117, 63, 0.8);
+        }
 }
 
 .modal-grams__text {
@@ -96,11 +164,20 @@
     border-radius: 50%;
     box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
 
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 500;
     font-size: 10px;
     line-height: calc(28 / 10);
+
+    &--icecoffee {
+        background-color: #EFD478;
+        border: 2px solid #EFD478;
+        box-shadow: 0px 6px 20px rgba(248, 210, 78, 0.25);
+    }
+    &--milkshake {
+        background-color: #D6936D;
+        border: 2px solid #D6936D;
+        box-shadow: 0px 6px 20px rgba(213, 117, 63, 0.25);
+    }
 }
 
 .modal-table {
@@ -118,9 +195,6 @@
     display: flex;
     justify-content: space-between;
 
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 176%;
     letter-spacing: 0.04em;

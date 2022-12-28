@@ -7,6 +7,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  cursor: url('../cursor.png'), auto;
 }
 
 body {
@@ -22,14 +23,14 @@ body {
   background-image: url(../images/background-body/background_mobile@1x.jpg);
 
   @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
     background-image: url(../images/background-body/background_mobile@2x.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 3),
-    screen and (min-resolution: 288dpi),
-    screen and (min-resolution: 3dppx) {
+  screen and (min-resolution: 288dpi),
+  screen and (min-resolution: 3dppx) {
     background-image: url(../images/background-body/background_mobile@3x.jpg);
   }
 
@@ -37,14 +38,14 @@ body {
     background-image: url(../images/background-body/background_tablet@1x.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
       background-image: url(../images/background-body/background_tablet@2x.jpg);
     }
 
     @media screen and (min-device-pixel-ratio: 3),
-      screen and (min-resolution: 288dpi),
-      screen and (min-resolution: 3dppx) {
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
       background-image: url(../images/background-body/background_tablet@3x.jpg);
     }
   }
@@ -53,14 +54,14 @@ body {
     backgrouтзьnd-image: url(../images/background-body/background_desktop@1x.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
       background-image: url(../images/background-body/background_desktop@2x.jpg);
     }
 
     @media screen and (min-device-pixel-ratio: 3),
-      screen and (min-resolution: 288dpi),
-      screen and (min-resolution: 3dppx) {
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
       background-image: url(../images/background-body/background_desktop@3x.jpg);
     }
   }
@@ -115,6 +116,43 @@ img {
   }
 }
 
+// кнопка-svg для модальних вікон 
+.close-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #131313;
+
+  cursor: url('../cursor-pointer.png'), auto;
+
+  transition: color var(--timing-function);
+
+  @media screen and (min-width: 768px) {
+    width: 24px;
+    height: 24px;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-bg-txt-cl)
+  }
+}
+
+.close-button__icon {
+  fill: currentColor;
+  cursor: url('../cursor-pointer.png'), auto;
+}
+
 // === Клас для JS для виклику і появи модального вікна ===
 .active {
   opacity: 1;
@@ -134,9 +172,11 @@ img {
     opacity: 0;
     transform: translateY(100px);
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);

@@ -3,8 +3,11 @@
 
     @media screen and (min-width: 1200px) {
         display: flex;
+        margin-top: auto;
         margin-left: auto;
         margin-right: 205px;
+        
+        padding-bottom: 13px;
     }
 }
 
@@ -13,7 +16,6 @@
         display: flex;
         gap: 28px;
         align-items: center;
-
     }
 }
 
@@ -29,7 +31,6 @@
     color: #FCFCFC;
 
     transition: color var(--timing-function);
-
 
     &:hover,
     &:focus {

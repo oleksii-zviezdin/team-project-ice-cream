@@ -7,11 +7,18 @@ h6,
 p {
   margin: 0;
 }
+
 // === Посилання ===
 
 a {
   text-decoration: none;
   color: currentColor;
+
+  &:hover,
+  &:focus {
+    cursor: url('../cursor-pointer.png'), auto;
+  }
+
 }
 
 // === Стилі списку ===
@@ -26,4 +33,16 @@ svg {
   display: block;
   padding: 0;
   margin: 0;
+}
+
+button,
+a {
+  user-select: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  cursor: url('../cursor-pointer.png'), auto;
 }

@@ -34,7 +34,6 @@
   background-color: var(--accent-bg-txt-cl);
   color: var(--main-text-cl);
   border-radius: var(--border-radius);
-  cursor: pointer;
   text-align: center;
 
   transition: var(--timing-function);
@@ -42,6 +41,7 @@
   &:hover,
   &:focus {
     background-color: #0a8817;
+    cursor: url('../cursor-pointer.png'), auto;
   }
 
   &:focus {
@@ -62,12 +62,12 @@
   background-color: transparent;
   border: 2px solid var(--accent-bg-txt-cl);
   color: var(--main-text-cl);
-  cursor: pointer;
   text-align: center;
 
   &:hover,
   &:focus {
     border: 2px solid #0a8817;
+    cursor: url('../cursor-pointer.png'), auto;
   }
 
   &:focus {
