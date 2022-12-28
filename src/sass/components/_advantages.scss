@@ -110,11 +110,14 @@
 
 }
 .advantages__item:nth-child(1)::before{
-   background-image: url('../images/advantages/cow.png');
+   background-image: url('../images/advantages/cow-0.png');
+   background-size: contain;
 }
 .advantages__item:nth-child(2)::before {
-   background-image: url('../images/advantages/weight.png');
+   background-image: url('../images/advantages/weight-0.png');
+   background-size: contain;
 }
 .advantages__item:nth-child(3)::before {
-   background-image: url('../images/advantages/ice-crema.png');
+   background-image: url('../images/advantages/ice-crema-0.png');
+   background-size: contain;
 }
