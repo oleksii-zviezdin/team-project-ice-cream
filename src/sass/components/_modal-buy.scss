@@ -211,7 +211,29 @@
     display: block;
     width: 132px;
     height: 132px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     background-image: url(../images/modal-window/modal-buy/1_small@1x.png);
+    transition: background-size var(--timing-function);
+
+        &:hover,
+        &:focus {
+                background-size: 128px 128px;
+            }
+
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url(../images/modal-window/modal-buy/1_small@2x.png);
+        }
+
+    @media screen and (min-device-pixel-ratio: 3),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+            background-image: url(../images/modal-window/modal-buy/1_small@3x.png);
+        }
 
     &::before {
         content: "";
@@ -230,18 +252,42 @@
 
     &--second {
         background-image: url(../images/modal-window/modal-buy/2_small@1x.png);
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: url(../images/modal-window/modal-buy/2_small@2x.png);
+            }
+        
+            @media screen and (min-device-pixel-ratio: 3),
+            screen and (min-resolution: 288dpi),
+            screen and (min-resolution: 3dppx) {
+                background-image: url(../images/modal-window/modal-buy/2_small@3x.png);
+            }
     }
 
     &--second::before {
+        content: "";
         background: rgba(248, 210, 78, 0.7);
         box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
     }
 
     &--third {
         background-image: url(../images/modal-window/modal-buy/3_small@1x.png);
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: url(../images/modal-window/modal-buy/3_small@2x.png);
+            }
+        
+            @media screen and (min-device-pixel-ratio: 3),
+            screen and (min-resolution: 288dpi),
+            screen and (min-resolution: 3dppx) {
+                background-image: url(../images/modal-window/modal-buy/3_small@3x.png);
+            }
     }
 
     &--third::before {
+        content: "";
         background: rgba(213, 117, 63, 0.7);
         box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
     }
