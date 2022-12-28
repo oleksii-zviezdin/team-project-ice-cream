@@ -133,7 +133,7 @@ img {
   background-color: transparent;
   color: #131313;
 
-  cursor: pointer;
+  cursor: url('../cursor-pointer.png'), auto;
 
   transition: color var(--timing-function);
 
@@ -150,6 +150,7 @@ img {
 
 .close-button__icon {
   fill: currentColor;
+  cursor: url('../cursor-pointer.png'), auto;
 }
 
 // === Клас для JS для виклику і появи модального вікна ===

@@ -7,19 +7,21 @@
     text-align: center;
 
     @media screen and (min-width: 768px) {
-    width: 568px;
-    height: 644px;
-    padding: 32px;
-    overflow-y: auto;
+        width: 568px;
+        height: 644px;
+        padding: 32px;
+        overflow-y: auto;
     }
 }
+
 .modal--icecream {
     height: 100%;
     overflow-y: scroll;
     padding: 28px 20px;
     text-align: center;
+
     @media screen and (min-width: 768px) {
-            padding: 32px 40px;
+        padding: 32px 40px;
     }
 }
 
@@ -29,7 +31,7 @@
     right: 16px;
 
     fill: var(--main-text-cl);
-    cursor: pointer;
+    cursor: url('../cursor-pointer.png'), auto;
 
     transition: fill var(--timing-function);
 
@@ -59,11 +61,12 @@
         width: 100%;
         margin-bottom: 40px;
     }
+
     &--icecream {
         @media screen and (min-width: 768px) {
-        margin-bottom: 24px;
+            margin-bottom: 24px;
+        }
     }
-}
 }
 
 
@@ -73,6 +76,7 @@
     justify-content: center;
     gap: 12px;
     margin-bottom: 26px;
+
     @media screen and (min-width: 768px) {
         gap: 16px;
         margin-bottom: 32px;
@@ -126,7 +130,7 @@
     @extend %button;
     border: none;
     padding: 12px 34px;
-    
+
     &:disabled {
         background-color: rgba(248, 210, 78, 0.5);
     }
@@ -211,6 +215,7 @@
     display: block;
     width: 132px;
     height: 132px;
+    cursor: url('../cursor-pointer.png'), auto;
 
     background-size: contain;
     background-repeat: no-repeat;
@@ -218,22 +223,22 @@
     background-image: url(../images/modal-window/modal-buy/1_small@1x.png);
     transition: background-size var(--timing-function);
 
-        &:hover,
-        &:focus {
-                background-size: 128px 128px;
-            }
+    &:hover,
+    &:focus {
+        background-size: 128px 128px;
+    }
 
     @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-            background-image: url(../images/modal-window/modal-buy/1_small@2x.png);
-        }
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image: url(../images/modal-window/modal-buy/1_small@2x.png);
+    }
 
     @media screen and (min-device-pixel-ratio: 3),
-        screen and (min-resolution: 288dpi),
-        screen and (min-resolution: 3dppx) {
-            background-image: url(../images/modal-window/modal-buy/1_small@3x.png);
-        }
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+        background-image: url(../images/modal-window/modal-buy/1_small@3x.png);
+    }
 
     &::before {
         content: "";
@@ -252,17 +257,18 @@
 
     &--second {
         background-image: url(../images/modal-window/modal-buy/2_small@1x.png);
+
         @media screen and (min-device-pixel-ratio: 2),
-            screen and (min-resolution: 192dpi),
-            screen and (min-resolution: 2dppx) {
-                background-image: url(../images/modal-window/modal-buy/2_small@2x.png);
-            }
-        
-            @media screen and (min-device-pixel-ratio: 3),
-            screen and (min-resolution: 288dpi),
-            screen and (min-resolution: 3dppx) {
-                background-image: url(../images/modal-window/modal-buy/2_small@3x.png);
-            }
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url(../images/modal-window/modal-buy/2_small@2x.png);
+        }
+
+        @media screen and (min-device-pixel-ratio: 3),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+            background-image: url(../images/modal-window/modal-buy/2_small@3x.png);
+        }
     }
 
     &--second::before {
@@ -273,17 +279,18 @@
 
     &--third {
         background-image: url(../images/modal-window/modal-buy/3_small@1x.png);
+
         @media screen and (min-device-pixel-ratio: 2),
-            screen and (min-resolution: 192dpi),
-            screen and (min-resolution: 2dppx) {
-                background-image: url(../images/modal-window/modal-buy/3_small@2x.png);
-            }
-        
-            @media screen and (min-device-pixel-ratio: 3),
-            screen and (min-resolution: 288dpi),
-            screen and (min-resolution: 3dppx) {
-                background-image: url(../images/modal-window/modal-buy/3_small@3x.png);
-            }
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url(../images/modal-window/modal-buy/3_small@2x.png);
+        }
+
+        @media screen and (min-device-pixel-ratio: 3),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+            background-image: url(../images/modal-window/modal-buy/3_small@3x.png);
+        }
     }
 
     &--third::before {
