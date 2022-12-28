@@ -21,23 +21,25 @@
                 <div class="group-padding" role="group">
     
                     <div class="div__modal">
-                        <input class="modal__form--field" type="text" name="user_name" required id="user_name" placeholder="Name">
+                        <input class="modal__form--field" type="text" name="user_name" id="user_name" 
+                        placeholder="Name" autocomplete="name" minlength="5" required="">
                     </div>
     
                     <div class="div__modal">
-                        <input class="modal__form--field" type="tel" name="user_phone" required id="user_phone" placeholder="Phone">
+                        <input class="modal__form--field" type="tel" name="user_phone" id="user_phone" 
+                        placeholder="Phone" autocomplete="tel" minlength="5" required="">
                     </div>
     
                     <div class="div__modal">
-                        <input class="modal__form--field" type="email" name="user_email" required id="user_email"
-                            placeholder="Email">
+                        <input class="modal__form--field" type="email" name="user_email" id="user_email"
+                            placeholder="Email" autocomplete="email" minlength="5" required="">
                     </div>
     
-                    <textarea class="modal__form--message" name="user_message" required id="user_message" rows="6"
-                        placeholder="Comment"></textarea>
+                    <textarea class="modal__form--message" name="user_message" id="user_message" rows="6"
+                        placeholder="Comment" autocomplete="comment" minlength="5" required=""></textarea>
                 </div>
     
-                <button class="modal__btn--form js-modal-close" type="submit">Submit</button>
+                <button class="modal__btn--form btnd" type="submit" disabled="true">Submit</button>
             </form>
         </div>
     </div>
