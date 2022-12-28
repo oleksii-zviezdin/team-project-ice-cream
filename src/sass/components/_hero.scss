@@ -241,6 +241,7 @@
     margin-bottom: 80px;
   }
 }
+
 .dots {
   position: absolute;
   z-index: 1;
@@ -268,7 +269,7 @@
 .plate {
   display: none;
   z-index: 3;
-  animation: rotate-center 6s linear infinite both;
+  animation: rotate-center 12s linear infinite both;
 
   @media screen and (min-width: 768px) {
     display: block;
@@ -282,6 +283,7 @@
     bottom: 12%;
   }
 }
+
 .subtitle__container {
   position: relative;
 }
