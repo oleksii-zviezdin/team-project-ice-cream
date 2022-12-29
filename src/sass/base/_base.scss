@@ -11,71 +11,73 @@ html {
 }
 
 body {
+  position: relative;
   font-family: var(--main-font);
   color: var(--main-text-cl);
   font-size: 14px;
   letter-spacing: 0.04em;
-
-  background-position: center;
-  background-size: contain;
-  background-attachment: fixed;
-
-    &::-webkit-scrollbar {
+  
+  &::-webkit-scrollbar {
       width: 0px;
     }
   
-    &::-webkit-scrollbar-track {
-      background-color: #dedcdc;
-    }
+    // &::-webkit-scrollbar-track {
+    //   background-color: #dedcdc;
+    // }
   
-    &::-webkit-scrollbar-thumb {
-      background-color: #ababab;
-      border-radius: 8px;
-      border: 2px solid #dedcdc;
-    }
+    // &::-webkit-scrollbar-thumb {
+    //   background-color: #ababab;
+    //   border-radius: 8px;
+    //   border: 2px solid #dedcdc;
+    // }
+
+  background-position: center;
+  // background-size: contain;
+  background-size: cover;
+  background-attachment: fixed;
 
   background-image: url(../images/background-body/background_mobile@1x.jpg);
 
   @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: url(../images/background-body/background_mobile@2x.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 3),
-  screen and (min-resolution: 288dpi),
-  screen and (min-resolution: 3dppx) {
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
     background-image: url(../images/background-body/background_mobile@3x.jpg);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 481px) {
     background-image: url(../images/background-body/background_tablet@1x.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: url(../images/background-body/background_tablet@2x.jpg);
     }
 
     @media screen and (min-device-pixel-ratio: 3),
-    screen and (min-resolution: 288dpi),
-    screen and (min-resolution: 3dppx) {
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
       background-image: url(../images/background-body/background_tablet@3x.jpg);
     }
   }
 
-  @media screen and (min-width: 1200px) {
-    backgrouтзьnd-image: url(../images/background-body/background_desktop@1x.jpg);
+  @media screen and (min-width: 769px) {
+    background-image: url(../images/background-body/background_desktop@1x.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url(../images/background-body/background_desktop@2x.jpg);
     }
 
     @media screen and (min-device-pixel-ratio: 3),
-    screen and (min-resolution: 288dpi),
-    screen and (min-resolution: 3dppx) {
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
       background-image: url(../images/background-body/background_desktop@3x.jpg);
     }
   }
