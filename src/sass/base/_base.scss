@@ -122,11 +122,12 @@ img {
   border-radius: var(--border-radius);
   
     &::-webkit-scrollbar {
-      width: 7px;
+      width: 0px;
     }
     
     &::-webkit-scrollbar-track {
       background-color: #dedcdc;
+      border-radius: 2px;
     }
   
     &::-webkit-scrollbar-thumb {
