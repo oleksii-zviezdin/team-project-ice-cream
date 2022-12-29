@@ -1,7 +1,7 @@
 .btn-up {
     position: fixed;
     bottom: 3.75vw;
-    right: 4vw;
+    right: 2vw;
 
     display: inline-flex;
     width: 50px;
@@ -27,7 +27,7 @@
         }
 
     @media screen and (min-width: 1200px) {
-        right: 12vw;
+        right: 2vw;
         bottom: 3.75vw;
     }
 
