@@ -118,10 +118,18 @@
     @media screen and (min-width: 768px) {
         padding-top: 76px;
     }
+
+    @media screen and (max-height: 500px) {
+        padding: 5vh;
+    }
 }
 
 .mobile-menu__item:not(:last-child) {
     margin-bottom: 40px;
+
+    @media screen and (max-height: 500px) {
+        margin-bottom: 4vh;
+    }
 }
 
 .mobile-menu__link {
@@ -139,6 +147,10 @@
     @media screen and (min-width: 768px) {
         font-size: 48px;
         line-height: 1.23;
+    }
+
+    @media screen and (max-height: 500px) {
+        font-size: 6.4vh;
     }
 }
 

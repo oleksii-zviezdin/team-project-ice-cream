@@ -1,27 +1,30 @@
 // MODAL
 .modal--buy {
     padding: 20px;
-    height: 95%;
+    // height: 95%;
 
-    overflow-y: scroll;
+    // overflow-y: scroll;
     text-align: center;
+    @include modal(1022px, 640px);
 
     @media screen and (min-width: 768px) {
         width: 568px;
-        height: 644px;
+        // height: 644px;
         padding: 32px;
-        overflow-y: auto;
+        // overflow-y: auto;
     }
 }
 
 .modal--icecream {
-    height: 95%;
-    overflow-y: scroll;
+    // height: 95%;
+    // overflow-y: scroll;
     padding: 28px 20px;
     text-align: center;
 
+    @include modal(976px, 996px);
+
     @media screen and (min-width: 768px) {
-        @include modal(568px, 996px);
+        // @include modal(568px, 996px);
         padding: 32px 40px;
     }
 }
