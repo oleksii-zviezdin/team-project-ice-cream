@@ -1,0 +1,40 @@
+.btn-up {
+    position: fixed;
+    bottom: 3.75vw;
+    right: 4vw;
+
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+
+    font-family: var(--secondary-font);
+
+    transition: var(--timing-function);
+    
+    background-color: rgba(132, 161, 120, 0.75);
+    border-radius: 50%;
+    border: none;
+
+    outline: 3px solid rgb(248, 210, 78, 0.85);
+    outline-offset: -3px;
+    
+    @media screen and (min-width: 768px) {
+            bottom: 8vw;
+        }
+
+    @media screen and (min-width: 1200px) {
+        right: 12vw;
+        bottom: 3.75vw;
+    }
+
+    &:hover,
+    &:focus {
+        outline-offset: 3px;
+        border: 2px solid var(--accent-bg-txt-cl);
+        background-color: rgb(248, 210, 78, 0.5);
+    }
+}
