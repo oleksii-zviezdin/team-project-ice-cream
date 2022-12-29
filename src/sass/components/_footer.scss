@@ -151,6 +151,13 @@
         text-align: right;
         color: var(--secondary-text-cl);
 
+        transition: var(--timing-function);
+
+        &:hover,
+        &:focus {
+            text-shadow: 0px 0px 10px var(--secondary-text-cl);
+        }
+
         @media screen and (min-width:768px) {
             font-size: 14px;
         }
