@@ -20,6 +20,20 @@ body {
   background-size: contain;
   background-attachment: fixed;
 
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
+  
+    &::-webkit-scrollbar-track {
+      background-color: #dedcdc;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background-color: #ababab;
+      border-radius: 8px;
+      border: 2px solid #dedcdc;
+    }
+
   background-image: url(../images/background-body/background_mobile@1x.jpg);
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -106,6 +120,22 @@ img {
   background-color: var(--secondary-text-cl);
   border: 2px solid var(--accent-bg-txt-cl);
   border-radius: var(--border-radius);
+  
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
+    
+    &::-webkit-scrollbar-track {
+      background-color: #dedcdc;
+      border-radius: 2px;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background-color: #ababab;
+      border-radius: 8px;
+      border: 2px solid #dedcdc;
+    }
+
 
   @media screen and (min-width: 768px) {
     width: 568px;

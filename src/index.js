@@ -17,3 +17,6 @@ import './js/button-disabled';
 
 import './js/jquery-3.2.1.min';
 import './js/counter2';
+
+
+// import './js/jquery-3.2.1.min';
