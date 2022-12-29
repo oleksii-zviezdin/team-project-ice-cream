@@ -17,12 +17,12 @@
     margin: 0 auto;
     margin-bottom: 30px;
 
-    background-color: #9CBE8F;
-
     border-radius: 50%;
     background-size: contain;
     background-repeat: no-repeat;
-    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+    }
 
     &::before {
         content: "";
@@ -39,6 +39,7 @@
         box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
     }
     &--icecream {
+        background-color: #9CBE8F;
         background-image: url(../images/modal-window/ice-cream/ice_small@1x.png);
         @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
@@ -54,6 +55,8 @@
     }
 }
 .modal__img--icecoffee {
+        background: rgb(248, 210, 78);
+        background-size: contain;
         background-image: url(../images/modal-window/modal-buy/2_small@1x.png);
         @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
@@ -69,26 +72,28 @@
     &::before {
         content: "";
         background: rgba(248, 210, 78, 0.7);
-            box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+        box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.3);
     }
 }
 .modal__img--milkshake {
+    background: rgb(213, 117, 63);
+    background-size: contain;
     background-image: url(../images/modal-window/modal-buy/3_small@1x.png);
     @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-            background-image: url(../images/modal-window/modal-buy/3_small@2x.png);
+        background-image: url(../images/modal-window/modal-buy/3_small@2x.png);
         }
     
         @media screen and (min-device-pixel-ratio: 3),
         screen and (min-resolution: 288dpi),
         screen and (min-resolution: 3dppx) {
-            background-image: url(../images/modal-window/modal-buy/3_small@3x.png);
+        background-image: url(../images/modal-window/modal-buy/3_small@3x.png);
         }
     &::before {
         content: "";
         background: rgba(213, 117, 63, 0.7);
-            box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 5.26027px 19.726px rgba(213, 117, 63, 0.3);
     }
 }
 
@@ -97,6 +102,10 @@
     gap: 9px;
     margin-bottom: 40px;
     justify-content: center;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 48px;
+    }
 }
 
 .modal-grams__item {
@@ -169,10 +178,12 @@
     &--icecoffee {
         background-color: #EFD478;
         border: 2px solid #EFD478;
+        box-shadow: 0px 6px 20px rgba(248, 210, 78, 0.25);
     }
     &--milkshake {
         background-color: #D6936D;
         border: 2px solid #D6936D;
+        box-shadow: 0px 6px 20px rgba(213, 117, 63, 0.25);
     }
 }
 
@@ -180,7 +191,8 @@
     width: 100%;
     margin-bottom: 40px;
 
-    @media screen and (min-width: 568px) {
+    @media screen and (min-width: 768px) {
+        margin-bottom: 48px;
         max-width: 488px;
         margin-left: auto;
         margin-right: auto;
@@ -191,9 +203,6 @@
     display: flex;
     justify-content: space-between;
 
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 176%;
     letter-spacing: 0.04em;
