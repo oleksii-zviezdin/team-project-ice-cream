@@ -80,12 +80,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
   overlay.forEach(function (item) {
     item.addEventListener('click', function (e) {
-      var parentModal = this.closest('.overlay');
+      var modalId = this.getAttribute('data-modal'),
+        modalElem = document.querySelector(
+          '.modal[data-modal="' + modalId + '"]'
+        ),
+        withinBoundaries = e.composedPath().includes(modalElem);
 
-      parentModal.classList.remove('active');
-      body.classList.remove('no-scroll');
+      if (!withinBoundaries) {
+        document.querySelector('.overlay.active').classList.remove('active');
+        document.querySelector('body').classList.remove('no-scroll');
+      }
     });
   }); // end foreach
+
+  // overlay.forEach(function (item) {
+  //   item.addEventListener('click', function (e) {
+  //     var parentModal = this.closest('.overlay');
+
+  //     parentModal.classList.remove('active');
+  //     body.classList.remove('no-scroll');
+  //   });
+  // }); // end foreach
 
   // overlay.addEventListener('click', function () {
   //   document.querySelector('.overlay.active').classList.remove('active');

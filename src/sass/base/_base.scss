@@ -107,7 +107,7 @@ img {
   z-index: 2000;
   transition: opacity var(--timing-function);
 
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .modal {
