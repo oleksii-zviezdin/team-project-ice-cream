@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
   /* Записываем в переменные массив элементов-кнопок и подложку.
       Подложке зададим id, чтобы не влиять на другие элементы с классом overlay*/
   var modalButtons = document.querySelectorAll('.js-open-modal'),
-    overlay = document.querySelector('.js-overlay-modal'),
+    overlay = document.querySelectorAll('.js-overlay-modal'),
     closeButtons = document.querySelectorAll('.js-modal-close'),
     body = document.querySelector('body');
 
@@ -77,6 +77,15 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     false
   );
+
+  overlay.forEach(function (item) {
+    item.addEventListener('click', function (e) {
+      var parentModal = this.closest('.overlay');
+
+      parentModal.classList.remove('active');
+      body.classList.remove('no-scroll');
+    });
+  }); // end foreach
 
   // overlay.addEventListener('click', function () {
   //   document.querySelector('.overlay.active').classList.remove('active');
