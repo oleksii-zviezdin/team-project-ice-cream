@@ -158,3 +158,7 @@
     cursor: url('../cursor-pointer.png'), auto;
     border: none;
 }
+
+form:invalid .modal__btn--form {
+    background-color: var(--disabled-cl);
+}
