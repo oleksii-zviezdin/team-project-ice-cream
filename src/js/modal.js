@@ -55,13 +55,13 @@ document.addEventListener('DOMContentLoaded', function () {
     }); // end click
   }); // end foreach
 
-
   closeButtons.forEach(function (item) {
     item.addEventListener('click', function (e) {
       var parentModal = this.closest('.overlay');
 
       parentModal.classList.remove('active');
       body.classList.remove('no-scroll');
+      player.pauseVideo();
     });
   }); // end foreach
 
@@ -73,6 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (key == 27) {
         document.querySelector('.overlay.active').classList.remove('active');
         document.querySelector('body').classList.remove('no-scroll');
+        player.pauseVideo();
       }
     },
     false
@@ -89,6 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!withinBoundaries) {
         document.querySelector('.overlay.active').classList.remove('active');
         document.querySelector('body').classList.remove('no-scroll');
+        player.pauseVideo();
       }
     });
   }); // end foreach
