@@ -1,17 +1,18 @@
 <div class="overlay js-overlay-modal" data-modal="3">
   <div class="modal read-more-modal" data-modal="3">
     <h2 class="read-more-modal__title">How it’s made?</h2>
-    <iframe
-      class="read-more-modal__video"
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/_Zt1EuIEhvw"
-      title="YouTube video player"  
-      style="border: 0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-      loading="lazy"
-    ></iframe>
+    <div class="read-more-modal__container">
+      <div class="read-more-modal__video" id="player"></div>
+      <div
+        class="read-more-modal__to-play"
+        data-id="player"
+        data-video="_Zt1EuIEhvw"
+      >
+        <svg class="read-more-modal__icon" width="70" height="70">
+          <use href="./images/icons.svg#play"></use>
+        </svg>
+      </div>
+    </div>
     <p class="read-more-modal__description">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur

@@ -88,5 +88,43 @@
 
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+      var tag = document.createElement('script');
+
+      tag.src = 'https://www.youtube.com/iframe_api';
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+      $('.read-more-modal__to-play').click(function (e) {
+        e.preventDefault();
+
+        let btn = $(this),
+          videoID = btn.data('video'),
+          playerID = btn.data('id');
+
+        player = new YT.Player(playerID, {
+          playerVars: {
+            controls: 0,
+            showinfo: 0,
+            disablekb: 1,
+            rel: 0,
+            playsinline: 1,
+          },
+          videoId: videoID,
+          events: {
+            onReady: onPlayerReady,
+          },
+        });
+      });
+
+      function onPlayerReady(event) {
+        let video = event.target.h;
+        $(video)
+          .siblings('.read-more-modal__to-play')
+          .addClass('read-more-modal__to-play--removed');
+        event.target.playVideo();
+      }
+    </script>
   </body>
 </html>
